@@ -48,7 +48,7 @@ const ChocolatePromoSection: FC = () => {
                   whileTap={{ scale: 0.95 }}
                   className="bg-[#3d2314] text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:bg-[#5d3324] text-center"
                 >
-                  Pre-order Guide
+                  Get your Guide
                 </motion.button>
               </div>
             </motion.div>
@@ -63,7 +63,7 @@ const ChocolatePromoSection: FC = () => {
             >
               <div className="relative w-full max-w-[500px] mx-auto perspective-1000">
                 <motion.img
-                  src="/chocolate-guide.webp"
+                  src="/guide.jpg"
                   alt="Chocolate Making Mastery Guide"
                   className="w-full h-auto rounded-lg"
                   animate={{
@@ -79,7 +79,7 @@ const ChocolatePromoSection: FC = () => {
                   className="absolute -bottom-4 -right-4 bg-[#5d3324] text-white py-3 px-6 rounded-full font-bold shadow-xl"
                   whileHover={{ scale: 1.1 }}
                 >
-                  Coming Soon
+                  Free
                 </motion.div>
               </div>
             </motion.div>

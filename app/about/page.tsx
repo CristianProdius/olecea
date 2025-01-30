@@ -85,7 +85,7 @@ const AboutPage = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-[#3d2314]/5 to-transparent rounded-3xl transform rotate-3 scale-105" />
             <div className="relative h-full rounded-3xl overflow-hidden shadow-2xl transform transition-transform hover:-translate-y-2 duration-300">
               <Image
-                src="/olesea-profile.webp"
+                src="/Olesea.jpg"
                 alt="Olesea - Chocolate Expert"
                 fill
                 className="object-cover"
@@ -112,7 +112,7 @@ const AboutPage = () => {
                 <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl relative transform hover:scale-105 transition-transform duration-300">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10" />
                   <Image
-                    src="/chocolate-making-process.webp"
+                    src="/mission1.jpg"
                     alt="Chocolate Making Process"
                     fill
                     className="object-cover"
@@ -122,7 +122,7 @@ const AboutPage = () => {
                 <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl relative transform hover:scale-105 transition-transform duration-300 translate-x-8">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10" />
                   <Image
-                    src="/chocolate-details.webp"
+                    src="/mission2.jpg"
                     alt="Chocolate Details"
                     fill
                     className="object-cover"
@@ -134,7 +134,7 @@ const AboutPage = () => {
                 <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl relative transform hover:scale-105 transition-transform duration-300">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10" />
                   <Image
-                    src="/chocolate-tasting.webp"
+                    src="/mainContact.png"
                     alt="Chocolate Tasting"
                     fill
                     className="object-cover"
@@ -196,7 +196,7 @@ const AboutPage = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-[#3d2314]/20 to-transparent rounded-3xl transform rotate-3 scale-105" />
               <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl relative transform hover:-translate-y-2 transition-transform duration-300">
                 <Image
-                  src="/chocolate-expertise.webp"
+                  src="/chocolate-tasting.png"
                   alt="Chocolate Making Expertise"
                   fill
                   className="object-cover"

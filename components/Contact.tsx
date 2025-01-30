@@ -69,7 +69,7 @@ const ContactSection: FC = () => {
               >
                 <div className="aspect-square overflow-hidden rounded-3xl shadow-2xl relative">
                   <Image
-                    src="/chocolate-making.webp"
+                    src="/mainContact.png"
                     alt="Chocolate Making"
                     fill
                     className="object-cover transform hover:scale-105 transition-transform duration-700"
@@ -85,7 +85,7 @@ const ContactSection: FC = () => {
                   >
                     <div className="aspect-square relative">
                       <Image
-                        src={`/chocolate-${activity}.webp`}
+                        src={`/chocolate-${activity}.png`}
                         alt={`DELICE ${activity}`}
                         fill
                         className="object-cover transform hover:scale-105 transition-transform duration-700"

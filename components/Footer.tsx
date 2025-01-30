@@ -84,7 +84,15 @@ const Footer: FC<FooterProps> = ({ currentYear = 2024 }) => {
               {["School", "Shop", "Courses", "Tastings", "Events"].map(
                 (item) => (
                   <motion.li key={item} variants={fadeInUp}>
-                    <Link href={`/${item.toLowerCase()}`}>
+                    <Link
+                      href={
+                        item === "School"
+                          ? "https://www.delice.school"
+                          : item === "Shop"
+                          ? "https://www.delice.market"
+                          : `/${item.toLowerCase()}`
+                      }
+                    >
                       <span
                         onMouseEnter={() => setIsHovered(item)}
                         onMouseLeave={() => setIsHovered("")}
@@ -109,7 +117,13 @@ const Footer: FC<FooterProps> = ({ currentYear = 2024 }) => {
             <motion.ul variants={staggerChildren} className="space-y-4">
               {["About", "Blog", "Contact", "Instagram"].map((item) => (
                 <motion.li key={item} variants={fadeInUp}>
-                  <Link href={`/${item.toLowerCase()}`}>
+                  <Link
+                    href={
+                      item === "Instagram"
+                        ? "https://www.instagram.com/delice.sommelier/"
+                        : `/${item.toLowerCase()}`
+                    }
+                  >
                     <span
                       onMouseEnter={() => setIsHovered(item)}
                       onMouseLeave={() => setIsHovered("")}

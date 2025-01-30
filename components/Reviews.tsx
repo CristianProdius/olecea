@@ -64,7 +64,7 @@ const ReviewsSection: FC = () => {
       content:
         "An incredible experience combining fine wines with exquisite chocolates. Olesea's expertise made the evening unforgettable.",
       date: "December 15, 2024",
-      avatar: "/reviews/maria.webp",
+      avatar: "/reviews/maria.jpg",
     },
     {
       author: "Alex D.",
@@ -72,7 +72,7 @@ const ReviewsSection: FC = () => {
       content:
         "The comprehensive chocolate making course exceeded my expectations. I learned techniques that transformed my confectionery business.",
       date: "December 10, 2024",
-      avatar: "/reviews/alex.webp",
+      avatar: "/reviews/alex.jpg",
     },
     {
       author: "Sophie M.",
@@ -80,7 +80,7 @@ const ReviewsSection: FC = () => {
       content:
         "My kids had an amazing time at the chocolate workshop. Educational, fun, and delicious - what more could we ask for?",
       date: "December 5, 2024",
-      avatar: "/reviews/sophie.webp",
+      avatar: "/reviews/sophie.jpg",
     },
     {
       author: "David R.",
@@ -88,7 +88,7 @@ const ReviewsSection: FC = () => {
       content:
         "DELICE organized a perfect team building event. The chocolate making session brought our team closer together.",
       date: "November 30, 2024",
-      avatar: "/reviews/david.webp",
+      avatar: "/reviews/david.jpg",
     },
     {
       author: "Elena V.",
@@ -96,7 +96,7 @@ const ReviewsSection: FC = () => {
       content:
         "The private masterclass was exactly what I needed. Personalized attention and professional guidance in chocolate crafting.",
       date: "November 25, 2024",
-      avatar: "/reviews/elena.webp",
+      avatar: "/reviews/elena.jpg",
     },
   ];
 

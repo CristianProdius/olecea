@@ -95,15 +95,19 @@ export default function Hero() {
           <div className="relative rounded-[32px] overflow-hidden shadow-[0_32px_64px_rgba(0,0,0,0.1)] group">
             <div className="absolute inset-0 bg-gradient-to-t from-[#3d2314]/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
 
-            <video
-              ref={videoRef}
-              src="/chocolate_making.webm"
-              className="object-cover w-full h-full transform group-hover:scale-105 transition-all duration-700 max-w-full"
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
+            <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+              {" "}
+              {/* 16:9 Aspect Ratio */}
+              <video
+                ref={videoRef}
+                src="/promoDelice.webm"
+                className="absolute top-0 left-0 w-full h-full object-cover transform group-hover:scale-105 transition-all duration-700"
+                autoPlay
+                loop
+                muted
+                playsInline
+              />
+            </div>
 
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
               <button
