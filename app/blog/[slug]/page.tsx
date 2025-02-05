@@ -44,7 +44,9 @@ export default function BlogPost() {
           "/placeholder.jpg",
         author: data._embedded?.["author"]?.[0]?.name || "Anonymous",
         categories:
-          data._embedded?.["wp:term"]?.[0]?.map((cat: any) => cat.name) || [],
+          data._embedded?.["wp:term"]?.[0]?.map(
+            (cat: { name: string }) => cat.name
+          ) || [],
       };
 
       setPost(formattedPost);

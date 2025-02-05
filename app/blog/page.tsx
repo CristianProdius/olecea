@@ -28,16 +28,25 @@ export default function BlogPage() {
         "https://admin.delice.school/personal/wp-json/wp/v2/posts?_embed"
       );
       const data = await response.json();
-      const formattedPosts = data.map((post: any) => ({
-        id: post.id,
-        title: post.title.rendered,
-        excerpt: post.excerpt.rendered,
-        date: new Date(post.date).toLocaleDateString(),
-        featuredImage:
-          post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ||
-          "/placeholder.jpg",
-        slug: post.slug,
-      }));
+      const formattedPosts = data.map(
+        (post: {
+          id: number;
+          title: { rendered: string };
+          excerpt: { rendered: string };
+          date: string;
+          _embedded?: { "wp:featuredmedia"?: [{ source_url: string }] };
+          slug: string;
+        }) => ({
+          id: post.id,
+          title: post.title.rendered,
+          excerpt: post.excerpt.rendered,
+          date: new Date(post.date).toLocaleDateString(),
+          featuredImage:
+            post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ||
+            "/placeholder.jpg",
+          slug: post.slug,
+        })
+      );
       setPosts(formattedPosts);
     } catch (error) {
       console.error("Error fetching posts:", error);
