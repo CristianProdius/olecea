@@ -164,7 +164,7 @@ const ContactPage = () => {
                   <h3 className="text-xl font-serif text-[#3d2314] mb-2">
                     Location
                   </h3>
-                  <p className="text-[#3d2314]/80">Moscow, Russia</p>
+                  <p className="text-[#3d2314]/80">Chisinau Moldova</p>
                 </div>
                 <div>
                   <h3 className="text-xl font-serif text-[#3d2314] mb-2">
