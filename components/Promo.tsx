@@ -1,9 +1,11 @@
 "use client";
 import { FC, useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const ChocolatePromoSection: FC = () => {
   const [isHovered, setIsHovered] = useState(false);
+  const t = useTranslations("promo");
 
   return (
     <div className="bg-[#f8f3e9] py-16 md:py-24 overflow-hidden">
@@ -23,21 +25,18 @@ const ChocolatePromoSection: FC = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl mb-8 text-[#3d2314] leading-[1.2]">
-                Chocolate Making
+                {t("title.first")}
                 <motion.span
                   className="block italic text-[#5d3324]"
                   animate={{ opacity: [0.5, 1, 0.5] }}
                   transition={{ duration: 2, repeat: Infinity }}
                 >
-                  from Bean to Bar
+                  {t("title.highlight")}
                 </motion.span>
-                Mastery Guide
+                {t("title.last")}
               </h2>
               <p className="text-lg md:text-xl mb-12 text-[#3d2314]/80 leading-relaxed">
-                Discover the art of chocolate making with our comprehensive
-                guide. Learn professional techniques, secret recipes, and expert
-                tips for creating exquisite chocolate confections in your own
-                kitchen.
+                {t("description")}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
                 <motion.button
@@ -48,7 +47,7 @@ const ChocolatePromoSection: FC = () => {
                   whileTap={{ scale: 0.95 }}
                   className="bg-[#3d2314] text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:bg-[#5d3324] text-center"
                 >
-                  Get your Guide
+                  {t("button")}
                 </motion.button>
               </div>
             </motion.div>
@@ -64,7 +63,7 @@ const ChocolatePromoSection: FC = () => {
               <div className="relative w-full max-w-[500px] mx-auto perspective-1000">
                 <motion.img
                   src="/guide.jpg"
-                  alt="Chocolate Making Mastery Guide"
+                  alt={t("imageAlt")}
                   className="w-full h-auto rounded-lg"
                   animate={{
                     rotateY: isHovered ? 10 : 0,
@@ -79,7 +78,7 @@ const ChocolatePromoSection: FC = () => {
                   className="absolute -bottom-4 -right-4 bg-[#5d3324] text-white py-3 px-6 rounded-full font-bold shadow-xl"
                   whileHover={{ scale: 1.1 }}
                 >
-                  Free
+                  {t("free")}
                 </motion.div>
               </div>
             </motion.div>

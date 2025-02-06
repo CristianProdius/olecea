@@ -1,0 +1,219 @@
+{
+  "navigation": {
+    "about": "About",
+    "school": "School",
+    "shop": "Shop",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "chocolate": "Chocolate",
+    "school": "School",
+    "description": "Enjoy the journey into the world of chocolate art with a professional chef chocolatier and certified cocoa taster",
+    "coursesButton": "Courses and Masterclasses",
+    "shopButton": "Shop"
+  },
+
+  "services": {
+    "professional": {
+      "title": "Professional Training",
+      "description": "Master the art of chocolate making with our comprehensive courses. Learn tempering, molding, and creating unique confections from a certified chocolate expert."
+    },
+    "children": {
+      "title": "Children's School",
+      "description": "Engage your children in exciting chocolate-making adventures. Our specially designed programs combine fun, creativity, and hands-on learning experiences."
+    },
+    "tastings": {
+      "title": "Tastings & Events",
+      "description": "Join our exclusive chocolate tasting sessions and special events. Experience unique flavor combinations and learn the art of chocolate appreciation."
+    }
+  },
+
+  "instructor": {
+    "subtitle": "Your Chocolate Expert & Instructor",
+    "meet": "Meet",
+    "name": "Olesea",
+    "greeting": "Hi, I'm",
+    "intro": {
+      "first": "As a certified chocolate sommelier and professional chocolatier, I'm the founder of DELICE Creative Chocolate School. My journey began with a simple love for sweets and an old family recipe book.",
+      "second": "With deep knowledge in neurobiology and nutrition, I combine my passion for quality chocolate with a commitment to healthy living. Today, I serve as a mentor, trainer, and consultant, helping both beginners and professionals master the art of chocolate."
+    },
+    "mission": {
+      "title": "My Mission",
+      "first": "At DELICE, we carefully select ingredients, monitor their quality and freshness, ensuring perfect harmony with recipes and other components. We create chocolates with passion, thinking about the pleasure and moments of delight that await those we serve.",
+      "second": "As a mother of twins, I especially value the opportunity to share my experience and knowledge, emphasizing the importance of delicious and healthy eating. I'll teach you how to make exquisite chocolates right in your own kitchen."
+    }
+  },
+
+  "reviews": {
+    "title": "What Our Students Say",
+    "avatarAlt": "{name}'s avatar",
+    "services": {
+      "tastingEvent": "Chocolate & Wine Tasting",
+      "professionalCourse": "Professional Course",
+      "childrenWorkshop": "Children's Workshop",
+      "corporateEvent": "Corporate Event",
+      "privateMasterclass": "Private Masterclass"
+    },
+    "testimonials": [
+      {
+        "author": "Maria K.",
+        "content": "An incredible experience combining fine wines with exquisite chocolates. Olesea's expertise made the evening unforgettable.",
+        "date": "December 15, 2024"
+      },
+      {
+        "author": "Alex D.",
+        "content": "The comprehensive chocolate making course exceeded my expectations. I learned techniques that transformed my confectionery business.",
+        "date": "December 10, 2024"
+      },
+      {
+        "author": "Sophie M.",
+        "content": "My kids had an amazing time at the chocolate workshop. Educational, fun, and delicious - what more could we ask for?",
+        "date": "December 5, 2024"
+      },
+      {
+        "author": "David R.",
+        "content": "DELICE organized a perfect team building event. The chocolate making session brought our team closer together.",
+        "date": "November 30, 2024"
+      },
+      {
+        "author": "Elena V.",
+        "content": "The private masterclass was exactly what I needed. Personalized attention and professional guidance in chocolate crafting.",
+        "date": "November 25, 2024"
+      }
+    ]
+  },
+
+  "promo": {
+    "title": {
+      "first": "Chocolate Making",
+      "highlight": "from Bean to Bar",
+      "last": "Mastery Guide"
+    },
+    "description": "Discover the art of chocolate making with our comprehensive guide. Learn professional techniques, secret recipes, and expert tips for creating exquisite chocolate confections in your own kitchen.",
+    "button": "Get your Guide",
+    "imageAlt": "Chocolate Making Mastery Guide",
+    "free": "Free"
+  },
+
+  "contact": {
+    "title": "Let's Create Something Sweet",
+    "description": "Whether you're interested in our chocolate courses, tastings, or custom creations, we're here to help you discover the art of fine chocolate making.",
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "Email Address",
+    "messagePlaceholder": "Tell us about your interest in chocolate making",
+    "submit": "Get in Touch",
+    "sending": "Sending...",
+    "successMessage": "Thank you for your message! We'll get back to you soon.",
+    "errorMessage": "There was an error sending your message. Please try again later."
+  },
+
+  "faq": {
+    "title": {
+      "first": "Frequently",
+      "highlight": "Asked",
+      "last": "Questions"
+    },
+    "description": "Everything you need to know about DELICE chocolate making courses and masterclasses.",
+    "course": {
+      "format": {
+        "question": "What is the format of the chocolate making course?",
+        "answer": "The course consists of 4 modules (lessons) of 4-5 hours each or 2 full days. We combine theoretical knowledge with practice in an interactive format. Each lesson includes instructor demonstrations followed by hands-on exercises under guidance."
+      }
+    },
+    "individual": {
+      "attention": {
+        "question": "Is individual attention provided during training?",
+        "answer": "Yes, we give maximum attention to each participant. Training is conducted individually or in small groups of 2-3 people to ensure personalized guidance and support."
+      }
+    },
+    "experience": {
+      "question": "Is experience required to participate in the course?",
+      "answer": "No, our course is suitable for both beginners and experienced confectioners. We adapt the program depending on the participants' skill levels."
+    },
+    "materials": {
+      "question": "Are materials and ingredients provided?",
+      "answer": "Yes, all necessary materials and ingredients are provided. You don't need to bring anything with you except the desire to learn and create."
+    },
+    "booking": {
+      "question": "How can I book a place on the course?",
+      "answer": "You can book a place on our website by filling out the registration form. After booking confirmation, you will receive all necessary instructions and information."
+    },
+    "practice": {
+      "question": "Will there be an opportunity to practice after the course?",
+      "answer": "Yes, we provide access to additional materials and recipes for self-practice. You can also sign up for our advanced masterclasses to deepen your knowledge and skills."
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "description": "Subscribe to receive updates about upcoming courses, tastings, and chocolate insights.",
+      "emailPlaceholder": "Enter your email",
+      "subscribe": "Subscribe",
+      "agreement": "By subscribing you agree to receive updates about our courses and events."
+    },
+    "services": {
+      "title": "Services",
+      "school": "School",
+      "shop": "Shop",
+      "courses": "Courses",
+      "tastings": "Tastings",
+      "events": "Events"
+    },
+    "connect": {
+      "title": "Connect",
+      "about": "About",
+      "blog": "Blog",
+      "contact": "Contact",
+      "instagram": "Instagram"
+    },
+    "copyright": "All rights reserved. DELICE",
+    "backToTop": "Back to top"
+  },
+
+  "AboutPage": {
+    "title": "About DELICE",
+    "meetOlesea": "Meet Olesea",
+    "bio": {
+      "part1": "As a certified chocolate sommelier and professional chocolatier, I've dedicated my career to mastering the art of chocolate making. My journey began with a deep passion for confectionery and a commitment to understanding the science behind perfect chocolate.",
+      "part2": "With expertise in neurobiology and nutrition, I bring a unique perspective to chocolate making, combining artisanal craftsmanship with scientific precision to create exceptional chocolate experiences."
+    },
+    "philosophy": {
+      "title": "Our Philosophy",
+      "part1": "At DELICE, we believe in creating more than just chocolates – we craft experiences. Our approach combines traditional artisanal methods with modern techniques, ensuring each creation meets the highest standards of quality and taste.",
+      "part2": "Through our courses and workshops, we share our expertise and passion, helping both beginners and professionals master the art of chocolate making in an engaging and supportive environment."
+    },
+    "expertise": {
+      "title": "Our Expertise",
+      "description": "With years of experience in chocolate making and teaching, we provide comprehensive training programs that cover everything from basic techniques to advanced confectionery skills. Our courses are designed to inspire creativity while maintaining the highest standards of quality."
+    },
+    "community": {
+      "title": "Join Our Community",
+      "description": "Whether you're a beginner or a professional, our doors are open to everyone who shares our passion for chocolate. Join us to discover the art of chocolate making and become part of our growing community of chocolate enthusiasts.",
+      "button": "Start Your Journey"
+    }
+  },
+
+  "ContactPage": {
+    "title": "Let's Create Together",
+    "description": "Whether you're interested in our courses, tastings, or custom chocolate creations, we're here to help bring your chocolate dreams to life.",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Tell us about your interest in chocolate making",
+      "button": "Send Message"
+    },
+    "location": {
+      "title": "Location",
+      "address": "Chisinau, Moldova"
+    },
+    "email": {
+      "title": "Email",
+      "address": "contact@deliceschool.com"
+    },
+    "social": {
+      "title": "Social"
+    }
+  }
+}

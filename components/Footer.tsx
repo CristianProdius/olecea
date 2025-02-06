@@ -2,6 +2,7 @@
 import { FC, FormEvent, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 interface FooterProps {
   currentYear?: number;
@@ -10,6 +11,7 @@ interface FooterProps {
 const Footer: FC<FooterProps> = ({ currentYear = 2024 }) => {
   const [email, setEmail] = useState("");
   const [isHovered, setIsHovered] = useState("");
+  const t = useTranslations("footer");
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
@@ -29,6 +31,9 @@ const Footer: FC<FooterProps> = ({ currentYear = 2024 }) => {
     },
   };
 
+  const services = ["school", "shop", "courses", "tastings", "events"];
+  const connect = ["about", "blog", "contact", "instagram"];
+
   return (
     <footer className="bg-gradient-to-b from-[#f0e6d9] to-[#f8f3e9] px-6 py-16 md:px-8 md:py-24">
       <motion.div
@@ -42,8 +47,7 @@ const Footer: FC<FooterProps> = ({ currentYear = 2024 }) => {
           <motion.div variants={fadeInUp} className="space-y-8">
             <h2 className="text-3xl font-medium text-[#3d2314]">DELICE</h2>
             <p className="text-[#3d2314]/80 text-lg">
-              Subscribe to receive updates about upcoming courses, tastings, and
-              chocolate insights.
+              {t("newsletter.description")}
             </p>
             <form onSubmit={handleSubmit} className="space-y-6">
               <motion.div
@@ -52,7 +56,7 @@ const Footer: FC<FooterProps> = ({ currentYear = 2024 }) => {
               >
                 <input
                   type="email"
-                  placeholder="Enter your email"
+                  placeholder={t("newsletter.emailPlaceholder")}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="w-full bg-transparent border-b-2 border-[#3d2314]/20 pb-3 focus:outline-none focus:border-[#3d2314] transition-all duration-300 text-lg px-2"
@@ -67,61 +71,28 @@ const Footer: FC<FooterProps> = ({ currentYear = 2024 }) => {
                 whileTap={{ scale: 0.95 }}
                 className="bg-[#3d2314] text-white px-10 py-4 rounded-full text-lg shadow-xl hover:shadow-2xl transition-all duration-500 hover:bg-[#5d3324] w-full md:w-auto"
               >
-                Subscribe
+                {t("newsletter.subscribe")}
               </motion.button>
             </form>
             <p className="text-sm text-[#3d2314]/60 leading-relaxed">
-              By subscribing you agree to receive updates about our courses and
-              events.
+              {t("newsletter.agreement")}
             </p>
           </motion.div>
 
           <motion.div variants={fadeInUp}>
             <h3 className="text-xl font-medium mb-8 text-[#3d2314]">
-              Services
+              {t("services.title")}
             </h3>
             <motion.ul variants={staggerChildren} className="space-y-4">
-              {["School", "Shop", "Courses", "Tastings", "Events"].map(
-                (item) => (
-                  <motion.li key={item} variants={fadeInUp}>
-                    <Link
-                      href={
-                        item === "School"
-                          ? "https://www.delice.school"
-                          : item === "Shop"
-                          ? "https://www.delice.market"
-                          : `/${item.toLowerCase()}`
-                      }
-                    >
-                      <span
-                        onMouseEnter={() => setIsHovered(item)}
-                        onMouseLeave={() => setIsHovered("")}
-                        className="relative inline-block text-lg text-[#3d2314]/80 hover:text-[#3d2314] transition-colors duration-300"
-                      >
-                        {item}
-                        <span
-                          className={`absolute bottom-0 left-0 w-full h-0.5 bg-[#3d2314] transform origin-left transition-transform duration-300 ${
-                            isHovered === item ? "scale-x-100" : "scale-x-0"
-                          }`}
-                        />
-                      </span>
-                    </Link>
-                  </motion.li>
-                )
-              )}
-            </motion.ul>
-          </motion.div>
-
-          <motion.div variants={fadeInUp}>
-            <h3 className="text-xl font-medium mb-8 text-[#3d2314]">Connect</h3>
-            <motion.ul variants={staggerChildren} className="space-y-4">
-              {["About", "Blog", "Contact", "Instagram"].map((item) => (
+              {services.map((item) => (
                 <motion.li key={item} variants={fadeInUp}>
                   <Link
                     href={
-                      item === "Instagram"
-                        ? "https://www.instagram.com/delice.sommelier/"
-                        : `/${item.toLowerCase()}`
+                      item === "school"
+                        ? "https://www.delice.school"
+                        : item === "shop"
+                        ? "https://www.delice.market"
+                        : `/${item}`
                     }
                   >
                     <span
@@ -129,7 +100,39 @@ const Footer: FC<FooterProps> = ({ currentYear = 2024 }) => {
                       onMouseLeave={() => setIsHovered("")}
                       className="relative inline-block text-lg text-[#3d2314]/80 hover:text-[#3d2314] transition-colors duration-300"
                     >
-                      {item}
+                      {t(`services.${item}`)}
+                      <span
+                        className={`absolute bottom-0 left-0 w-full h-0.5 bg-[#3d2314] transform origin-left transition-transform duration-300 ${
+                          isHovered === item ? "scale-x-100" : "scale-x-0"
+                        }`}
+                      />
+                    </span>
+                  </Link>
+                </motion.li>
+              ))}
+            </motion.ul>
+          </motion.div>
+
+          <motion.div variants={fadeInUp}>
+            <h3 className="text-xl font-medium mb-8 text-[#3d2314]">
+              {t("connect.title")}
+            </h3>
+            <motion.ul variants={staggerChildren} className="space-y-4">
+              {connect.map((item) => (
+                <motion.li key={item} variants={fadeInUp}>
+                  <Link
+                    href={
+                      item === "instagram"
+                        ? "https://www.instagram.com/delice.sommelier/"
+                        : `/${item}`
+                    }
+                  >
+                    <span
+                      onMouseEnter={() => setIsHovered(item)}
+                      onMouseLeave={() => setIsHovered("")}
+                      className="relative inline-block text-lg text-[#3d2314]/80 hover:text-[#3d2314] transition-colors duration-300"
+                    >
+                      {t(`connect.${item}`)}
                       <span
                         className={`absolute bottom-0 left-0 w-full h-0.5 bg-[#3d2314] transform origin-left transition-transform duration-300 ${
                           isHovered === item ? "scale-x-100" : "scale-x-0"
@@ -148,7 +151,7 @@ const Footer: FC<FooterProps> = ({ currentYear = 2024 }) => {
           className="flex flex-col md:flex-row md:items-center justify-between mt-16 md:mt-24 pt-8 border-t border-[#3d2314]/10"
         >
           <div className="text-[#3d2314]/60 text-center md:text-left">
-            © {currentYear} All rights reserved. DELICE
+            © {currentYear} {t("copyright")}
           </div>
           <div className="flex flex-col md:flex-row gap-4 md:gap-8 mt-6 md:mt-0 text-center md:text-left">
             <Link href="#">
@@ -157,7 +160,7 @@ const Footer: FC<FooterProps> = ({ currentYear = 2024 }) => {
                 onMouseLeave={() => setIsHovered("")}
                 className="relative text-[#3d2314]/60 hover:text-[#3d2314] transition-colors duration-300"
               >
-                Back to top
+                {t("backToTop")}
                 <span
                   className={`absolute bottom-0 left-0 w-full h-0.5 bg-[#3d2314] transform origin-left transition-transform duration-300 ${
                     isHovered === "Back to top" ? "scale-x-100" : "scale-x-0"

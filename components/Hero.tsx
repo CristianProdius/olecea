@@ -1,13 +1,14 @@
 "use client";
-
 import { motion } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/app/i18n/routing";
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
   const [isPlaying, setIsPlaying] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const t = useTranslations("hero");
 
   useEffect(() => {
     setIsVisible(true);
@@ -56,12 +57,12 @@ export default function Hero() {
           >
             DELICE{" "}
             <span className="italic font-light relative">
-              Chocolate
+              {t("chocolate")}
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#3d2314]/20"></span>
             </span>
             <br />
             <span className="italic font-light relative">
-              School
+              {t("school")}
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#3d2314]/20"></span>
             </span>
           </motion.h1>
@@ -70,8 +71,7 @@ export default function Hero() {
             variants={fadeUp}
             className="text-lg text-[#3d2314]/80 max-w-md leading-relaxed text-center lg:text-left"
           >
-            Enjoy the journey into the world of chocolate art with a
-            professional chef chocolatier and certified cocoa taster
+            {t("description")}
           </motion.p>
 
           <motion.div
@@ -80,12 +80,12 @@ export default function Hero() {
           >
             <Link href="/courses" passHref>
               <button className="w-full sm:w-auto bg-[#3d2314] text-white px-8 py-4 rounded-full hover:bg-[#5d3324] transition-all duration-300 text-[15px] hover:shadow-lg hover:scale-105 active:scale-95">
-                Courses and Masterclasses
+                {t("coursesButton")}
               </button>
             </Link>
             <Link href="/shop" passHref>
               <button className="w-full sm:w-auto bg-[#f0e6d9] text-[#3d2314] px-8 py-4 rounded-full hover:bg-[#e8d9c6] transition-all duration-300 text-[15px] hover:shadow-lg hover:scale-105 active:scale-95">
-                Shop
+                {t("shopButton")}
               </button>
             </Link>
           </motion.div>

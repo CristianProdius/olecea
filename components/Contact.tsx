@@ -4,8 +4,10 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import emailjs from "@emailjs/browser";
+import { useTranslations } from "next-intl";
 
 const ContactSection: FC = () => {
+  const t = useTranslations("contact");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -102,15 +104,13 @@ const ContactSection: FC = () => {
               variants={fadeInUp}
               className="text-4xl md:text-5xl font-light mb-8 text-[#3d2314] tracking-tight"
             >
-              Let&apos;s Create Something Sweet
+              {t("title")}
             </motion.h2>
             <motion.p
               variants={fadeInUp}
               className="text-lg mb-12 text-[#3d2314]/70 leading-relaxed"
             >
-              Whether you&apos;re interested in our chocolate courses, tastings,
-              or custom creations, we&apos;re here to help you discover the art
-              of fine chocolate making.
+              {t("description")}
             </motion.p>
 
             <motion.form
@@ -184,7 +184,7 @@ const ContactSection: FC = () => {
                   isSubmitting ? "opacity-70 cursor-not-allowed" : ""
                 }`}
               >
-                {isSubmitting ? "Sending..." : "Get in Touch"}
+                {isSubmitting ? t("sending") : t("submit")}
               </motion.button>
 
               {submitStatus === "success" && (

@@ -4,8 +4,11 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const AboutPage = () => {
+  const t = useTranslations("AboutPage");
+
   const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
     visible: {
@@ -41,11 +44,7 @@ const AboutPage = () => {
             variants={fadeInUp}
             className="text-5xl md:text-7xl xl:text-8xl font-serif leading-tight tracking-tighter text-[#3d2314] mb-8"
           >
-            About{" "}
-            <span className="relative inline-block">
-              <span className="italic font-light">DELICE</span>
-              <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#3d2314]/20 to-[#3d2314]/40"></span>
-            </span>
+            {t("title")}
           </motion.h1>
         </motion.div>
       </section>
@@ -60,22 +59,11 @@ const AboutPage = () => {
         >
           <motion.div variants={fadeInUp} className="space-y-8">
             <h2 className="text-4xl md:text-5xl font-serif text-[#3d2314] leading-tight">
-              Meet Olesea
+              {t("meetOlesea")}
             </h2>
             <div className="prose prose-lg text-[#3d2314]/80">
-              <p className="leading-relaxed">
-                As a certified chocolate sommelier and professional chocolatier,
-                I&apos;ve dedicated my career to mastering the art of chocolate
-                making. My journey began with a deep passion for confectionery
-                and a commitment to understanding the science behind perfect
-                chocolate.
-              </p>
-              <p className="leading-relaxed">
-                With expertise in neurobiology and nutrition, I bring a unique
-                perspective to chocolate making, combining artisanal
-                craftsmanship with scientific precision to create exceptional
-                chocolate experiences.
-              </p>
+              <p className="leading-relaxed">{t("bio.part1")}</p>
+              <p className="leading-relaxed">{t("bio.part2")}</p>
             </div>
           </motion.div>
           <motion.div
@@ -149,20 +137,11 @@ const AboutPage = () => {
             className="order-1 lg:order-2 space-y-8"
           >
             <h2 className="text-4xl md:text-5xl font-serif text-[#3d2314] leading-tight">
-              Our Philosophy
+              {t("philosophy.title")}
             </h2>
             <div className="prose prose-lg text-[#3d2314]/80">
-              <p className="leading-relaxed">
-                At DELICE, we believe in creating more than just chocolates – we
-                craft experiences. Our approach combines traditional artisanal
-                methods with modern techniques, ensuring each creation meets the
-                highest standards of quality and taste.
-              </p>
-              <p className="leading-relaxed">
-                Through our courses and workshops, we share our expertise and
-                passion, helping both beginners and professionals master the art
-                of chocolate making in an engaging and supportive environment.
-              </p>
+              <p className="leading-relaxed">{t("philosophy.part1")}</p>
+              <p className="leading-relaxed">{t("philosophy.part2")}</p>
             </div>
           </motion.div>
         </motion.div>
@@ -179,16 +158,10 @@ const AboutPage = () => {
         >
           <motion.div variants={fadeInUp} className="space-y-8">
             <h2 className="text-4xl md:text-5xl font-serif leading-tight">
-              Our Expertise
+              {t("expertise.title")}
             </h2>
             <div className="prose prose-lg prose-invert text-white/90">
-              <p className="leading-relaxed">
-                With years of experience in chocolate making and teaching, we
-                provide comprehensive training programs that cover everything
-                from basic techniques to advanced confectionery skills. Our
-                courses are designed to inspire creativity while maintaining the
-                highest standards of quality.
-              </p>
+              <p className="leading-relaxed">{t("expertise.description")}</p>
             </div>
           </motion.div>
           <motion.div variants={fadeInUp}>
@@ -219,22 +192,17 @@ const AboutPage = () => {
         >
           <motion.div variants={fadeInUp} className="space-y-8">
             <h2 className="text-4xl md:text-5xl font-serif text-[#3d2314] leading-tight">
-              Join Our Community
+              {t("community.title")}
             </h2>
             <div className="prose prose-lg mx-auto text-[#3d2314]/80">
-              <p className="leading-relaxed">
-                Whether you&apos;re a beginner or a professional, our doors are
-                open to everyone who shares our passion for chocolate. Join us
-                to discover the art of chocolate making and become part of our
-                growing community of chocolate enthusiasts.
-              </p>
+              <p className="leading-relaxed">{t("community.description")}</p>
             </div>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="mt-8 px-8 py-4 bg-[#3d2314] text-white rounded-full text-lg font-medium hover:bg-[#2a1810] transition-colors duration-300"
             >
-              Start Your Journey
+              {t("community.button")}
             </motion.button>
           </motion.div>
         </motion.div>

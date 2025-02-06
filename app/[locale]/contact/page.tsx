@@ -4,8 +4,10 @@ import { useState, FormEvent } from "react";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { useTranslations } from "next-intl";
 
 const ContactPage = () => {
+  const t = useTranslations("ContactPage");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -51,16 +53,10 @@ const ContactPage = () => {
             className="text-center max-w-3xl mx-auto space-y-8"
           >
             <h1 className="text-4xl md:text-6xl lg:text-[64px] font-serif leading-[1.1] tracking-[-0.02em] text-[#3d2314]">
-              Let&apos;s Create{" "}
-              <span className="italic font-light relative">
-                Together
-                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#3d2314]/20"></span>
-              </span>
+              {t("title")}
             </h1>
             <p className="text-xl text-[#3d2314]/80 leading-relaxed">
-              Whether you&apos;re interested in our courses, tastings, or custom
-              chocolate creations, we&apos;re here to help bring your chocolate
-              dreams to life.
+              {t("description")}
             </p>
           </motion.div>
         </motion.div>
@@ -84,7 +80,7 @@ const ContactPage = () => {
                   >
                     <input
                       type="text"
-                      placeholder="Your Name"
+                      placeholder={t("form.name")}
                       value={formData.name}
                       onChange={(e) =>
                         setFormData({ ...formData, name: e.target.value })
@@ -99,7 +95,7 @@ const ContactPage = () => {
                   >
                     <input
                       type="email"
-                      placeholder="Your Email"
+                      placeholder={t("form.email")}
                       value={formData.email}
                       onChange={(e) =>
                         setFormData({ ...formData, email: e.target.value })
@@ -115,7 +111,7 @@ const ContactPage = () => {
                 >
                   <input
                     type="text"
-                    placeholder="Subject"
+                    placeholder={t("form.subject")}
                     value={formData.subject}
                     onChange={(e) =>
                       setFormData({ ...formData, subject: e.target.value })
@@ -129,7 +125,7 @@ const ContactPage = () => {
                   className="relative group"
                 >
                   <textarea
-                    placeholder="Tell us about your interest in chocolate making"
+                    placeholder={t("form.message")}
                     rows={6}
                     value={formData.message}
                     onChange={(e) =>
@@ -145,7 +141,7 @@ const ContactPage = () => {
                   whileTap={{ scale: 0.95 }}
                   className="bg-[#3d2314] text-white px-12 py-5 rounded-full text-lg shadow-xl hover:shadow-2xl transition-all duration-500 hover:bg-[#5d3324] w-full sm:w-auto"
                 >
-                  Send Message
+                  {t("form.button")}
                 </motion.button>
               </form>
             </motion.div>
@@ -153,7 +149,7 @@ const ContactPage = () => {
             <motion.div variants={fadeInUp} className="space-y-12">
               <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/chocolate-workshop.webp"
+                  src="/mainContact.png"
                   alt="DELICE Chocolate Workshop"
                   fill
                   className="object-cover"
@@ -162,23 +158,23 @@ const ContactPage = () => {
               <div className="space-y-8 bg-white/50 backdrop-blur-sm rounded-3xl p-8 shadow-xl">
                 <div>
                   <h3 className="text-xl font-serif text-[#3d2314] mb-2">
-                    Location
+                    {t("location.title")}
                   </h3>
-                  <p className="text-[#3d2314]/80">Chisinau Moldova</p>
+                  <p className="text-[#3d2314]/80">{t("location.address")}</p>
                 </div>
                 <div>
                   <h3 className="text-xl font-serif text-[#3d2314] mb-2">
-                    Email
+                    {t("email.title")}
                   </h3>
-                  <p className="text-[#3d2314]/80">contact@deliceschool.com</p>
+                  <p className="text-[#3d2314]/80">{t("email.address")}</p>
                 </div>
                 <div>
                   <h3 className="text-xl font-serif text-[#3d2314] mb-2">
-                    Social
+                    {t("social.title")}
                   </h3>
                   <div className="flex space-x-4">
                     <motion.a
-                      href="#"
+                      href="https://www.instagram.com/delice.sommelier/"
                       whileHover={{ scale: 1.1 }}
                       className="text-[#3d2314]/80 hover:text-[#3d2314]"
                     >

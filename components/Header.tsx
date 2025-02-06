@@ -1,10 +1,24 @@
 "use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { useTranslations, useLocale } from "next-intl";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const t = useTranslations("navigation");
+
+  const locale = useLocale(); // or get the locale from your context or props
+  const generateHref = (path: string) => `/${locale}${path}`;
+
+  const navLinks = [
+    { href: generateHref("/about"), label: t("about") },
+    { href: generateHref("/school"), label: t("school") },
+    { href: generateHref("/shop"), label: t("shop") },
+    { href: generateHref("/blog"), label: t("blog") },
+    { href: generateHref("/contact"), label: t("contact") },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,16 +46,19 @@ export default function Header() {
         </Link>
 
         <nav className="hidden md:flex items-center space-x-6 lg:space-x-12">
-          {["About", "School", "Shop", "Blog", "Contact"].map((item) => (
+          {navLinks.map((item) => (
             <Link
-              key={item}
-              href={`/${item.toLowerCase()}`}
+              key={item.href}
+              href={item.href}
               className="relative group text-[#3d2314] transition-colors duration-300"
             >
-              <span className="text-[15px] hover:text-[#5d3324]">{item}</span>
+              <span className="text-[15px] hover:text-[#5d3324]">
+                {item.label}
+              </span>
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#5d3324] transition-all group-hover:w-full"></span>
             </Link>
           ))}
+          <LanguageSwitcher />
         </nav>
 
         <button
@@ -74,23 +91,18 @@ export default function Header() {
         }`}
       >
         <nav className="flex flex-col w-full px-4 py-4">
-          {[
-            "About",
-            "School",
-            "Shop",
-            "Courses",
-            "Blog",
-            "Events",
-            "Contact",
-          ].map((item) => (
+          {navLinks.map((item) => (
             <Link
-              key={item}
-              href={`/${item.toLowerCase()}`}
+              key={item.href}
+              href={item.href}
               className="py-3 text-[#3d2314] hover:bg-[#f0e6d9] px-4 rounded-lg transition-colors"
             >
-              {item}
+              {item.label}
             </Link>
           ))}
+          <div className="py-3 px-4">
+            <LanguageSwitcher />
+          </div>
         </nav>
       </div>
     </header>

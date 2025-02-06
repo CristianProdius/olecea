@@ -1,7 +1,7 @@
 "use client";
-
 import { motion, PanInfo, useAnimation, useDragControls } from "framer-motion";
 import { FC, useEffect, useRef, useState, useCallback } from "react";
+import { useTranslations } from "next-intl";
 
 interface Review {
   author: string;
@@ -14,41 +14,48 @@ interface Review {
 const ReviewCard: FC<{ review: Review; index: number }> = ({
   review,
   index,
-}) => (
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5, delay: index * 0.1 }}
-    className="min-w-[300px] md:min-w-[380px] bg-[#f0e6d9] rounded-3xl p-6 md:p-8 flex flex-col snap-start"
-    whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
-    whileTap={{ scale: 0.98 }}
-  >
-    <div className="flex items-center gap-4 mb-6">
-      <motion.img
-        initial={{ scale: 0.8 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 0.3, delay: index * 0.1 }}
-        src={review.avatar}
-        alt=""
-        className="w-12 h-12 rounded-full object-cover"
-      />
-      <div>
-        <h3 className="text-base font-medium text-[#3d2314]">
-          {review.author}
-        </h3>
-        <p className="text-sm text-[#3d2314]/60">{review.service}</p>
+}) => {
+  const t = useTranslations("reviews");
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      className="min-w-[300px] md:min-w-[380px] bg-[#f0e6d9] rounded-3xl p-6 md:p-8 flex flex-col snap-start"
+      whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
+      whileTap={{ scale: 0.98 }}
+    >
+      <div className="flex items-center gap-4 mb-6">
+        <motion.img
+          initial={{ scale: 0.8 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.3, delay: index * 0.1 }}
+          src={review.avatar}
+          alt={t("avatarAlt", { name: review.author })}
+          className="w-12 h-12 rounded-full object-cover"
+        />
+        <div>
+          <h3 className="text-base font-medium text-[#3d2314]">
+            {review.author}
+          </h3>
+          <p className="text-sm text-[#3d2314]/60">
+            {t(`services.${review.service}`)}
+          </p>
+        </div>
       </div>
-    </div>
-    <p className="text-base mb-auto leading-relaxed text-[#3d2314]/80">
-      &quot;{review.content}&quot;
-    </p>
-    <div className="mt-8 pt-6 border-t border-[#3d2314]/10">
-      <p className="text-sm text-[#3d2314]/50">{review.date}</p>
-    </div>
-  </motion.div>
-);
+      <p className="text-base mb-auto leading-relaxed text-[#3d2314]/80">
+        &quot;{t(`testimonials.${index}.content`)}&quot;
+      </p>
+      <div className="mt-8 pt-6 border-t border-[#3d2314]/10">
+        <p className="text-sm text-[#3d2314]/50">{review.date}</p>
+      </div>
+    </motion.div>
+  );
+};
 
 const ReviewsSection: FC = () => {
+  const t = useTranslations("reviews");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -59,43 +66,38 @@ const ReviewsSection: FC = () => {
 
   const reviews: Review[] = [
     {
-      author: "Maria K.",
-      service: "Chocolate & Wine Tasting",
-      content:
-        "An incredible experience combining fine wines with exquisite chocolates. Olesea's expertise made the evening unforgettable.",
-      date: "December 15, 2024",
+      author: t("testimonials.0.author"),
+      service: "tastingEvent",
+      content: t("testimonials.0.content"),
+      date: t("testimonials.0.date"),
       avatar: "/reviews/maria.jpg",
     },
     {
-      author: "Alex D.",
-      service: "Professional Course",
-      content:
-        "The comprehensive chocolate making course exceeded my expectations. I learned techniques that transformed my confectionery business.",
-      date: "December 10, 2024",
+      author: t("testimonials.1.author"),
+      service: "professionalCourse",
+      content: t("testimonials.1.content"),
+      date: t("testimonials.1.date"),
       avatar: "/reviews/alex.jpg",
     },
     {
-      author: "Sophie M.",
-      service: "Children's Workshop",
-      content:
-        "My kids had an amazing time at the chocolate workshop. Educational, fun, and delicious - what more could we ask for?",
-      date: "December 5, 2024",
+      author: t("testimonials.2.author"),
+      service: "childrenWorkshop",
+      content: t("testimonials.2.content"),
+      date: t("testimonials.2.date"),
       avatar: "/reviews/sophie.jpg",
     },
     {
-      author: "David R.",
-      service: "Corporate Event",
-      content:
-        "DELICE organized a perfect team building event. The chocolate making session brought our team closer together.",
-      date: "November 30, 2024",
+      author: t("testimonials.3.author"),
+      service: "corporateEvent",
+      content: t("testimonials.3.content"),
+      date: t("testimonials.3.date"),
       avatar: "/reviews/david.jpg",
     },
     {
-      author: "Elena V.",
-      service: "Private Masterclass",
-      content:
-        "The private masterclass was exactly what I needed. Personalized attention and professional guidance in chocolate crafting.",
-      date: "November 25, 2024",
+      author: t("testimonials.4.author"),
+      service: "privateMasterclass",
+      content: t("testimonials.4.content"),
+      date: t("testimonials.4.date"),
       avatar: "/reviews/elena.jpg",
     },
   ];
@@ -176,7 +178,7 @@ const ReviewsSection: FC = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6 }}
         >
-          What Our Students Say
+          {t("title")}
         </motion.h2>
 
         <div className="relative">

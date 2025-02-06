@@ -2,8 +2,11 @@
 import { motion } from "framer-motion";
 import { FC } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const InstructorSection: FC = () => {
+  const t = useTranslations("instructor");
+
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
@@ -36,7 +39,7 @@ const InstructorSection: FC = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                Your Chocolate Expert & Instructor
+                {t("subtitle")}
               </motion.p>
               <motion.h2
                 className="text-5xl sm:text-6xl md:text-7xl font-serif text-[#3d2314] leading-[1.1]"
@@ -45,9 +48,9 @@ const InstructorSection: FC = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
-                Meet{" "}
+                {t("meet")}{" "}
                 <span className="italic font-light relative inline-block">
-                  Olesea
+                  {t("name")}
                   <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#3d2314]/20"></span>
                 </span>
               </motion.h2>
@@ -55,22 +58,11 @@ const InstructorSection: FC = () => {
 
             <div className="space-y-8">
               <h3 className="text-3xl md:text-4xl font-serif text-[#3d2314] leading-relaxed">
-                Hi, I&apos;m <span className="italic">Olesea</span>
+                {t("greeting")} <span className="italic">{t("name")}</span>
               </h3>
               <div className="space-y-6 text-[#3d2314]/80">
-                <p className="text-lg leading-relaxed">
-                  As a certified chocolate sommelier and professional
-                  chocolatier, I&apos;m the founder of DELICE Creative Chocolate
-                  School. My journey began with a simple love for sweets and an
-                  old family recipe book.
-                </p>
-                <p className="text-lg leading-relaxed">
-                  With deep knowledge in neurobiology and nutrition, I combine
-                  my passion for quality chocolate with a commitment to healthy
-                  living. Today, I serve as a mentor, trainer, and consultant,
-                  helping both beginners and professionals master the art of
-                  chocolate.
-                </p>
+                <p className="text-lg leading-relaxed">{t("intro.first")}</p>
+                <p className="text-lg leading-relaxed">{t("intro.second")}</p>
               </div>
             </div>
           </motion.div>
@@ -134,22 +126,11 @@ const InstructorSection: FC = () => {
             className="space-y-8 order-1 lg:order-2"
           >
             <h3 className="text-3xl md:text-4xl font-serif text-[#3d2314] leading-relaxed">
-              My <span className="italic">Mission</span>
+              {t("mission.title")}
             </h3>
             <div className="space-y-6 text-[#3d2314]/80">
-              <p className="text-lg leading-relaxed">
-                At DELICE, we carefully select ingredients, monitor their
-                quality and freshness, ensuring perfect harmony with recipes and
-                other components. We create chocolates with passion, thinking
-                about the pleasure and moments of delight that await those we
-                serve.
-              </p>
-              <p className="text-lg leading-relaxed">
-                As a mother of twins, I especially value the opportunity to
-                share my experience and knowledge, emphasizing the importance of
-                delicious and healthy eating. I&apos;ll teach you how to make
-                exquisite chocolates right in your own kitchen.
-              </p>
+              <p className="text-lg leading-relaxed">{t("mission.first")}</p>
+              <p className="text-lg leading-relaxed">{t("mission.second")}</p>
             </div>
           </motion.div>
         </motion.div>
