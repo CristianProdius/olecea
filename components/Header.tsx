@@ -14,10 +14,10 @@ export default function Header() {
 
   const navLinks = [
     { href: generateHref("/about"), label: t("about") },
-    { href: generateHref("/school"), label: t("school") },
+    { href: "https://www.delice.school/", label: t("school") },
     { href: generateHref("/shop"), label: t("shop") },
     { href: generateHref("/blog"), label: t("blog") },
-    { href: generateHref("/contact"), label: t("contact") },
+    { href: "https://www.delice.market/", label: t("contact") },
   ];
 
   useEffect(() => {

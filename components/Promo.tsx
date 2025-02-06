@@ -46,6 +46,12 @@ const ChocolatePromoSection: FC = () => {
                   }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-[#3d2314] text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:bg-[#5d3324] text-center"
+                  onClick={() => {
+                    const link = document.createElement("a");
+                    link.href = "/guide.pdf";
+                    link.download = "guide.pdf";
+                    link.click();
+                  }}
                 >
                   {t("button")}
                 </motion.button>

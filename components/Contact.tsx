@@ -23,9 +23,7 @@ const ContactSection: FC = () => {
   });
 
   useEffect(() => {
-    emailjs.init({
-      publicKey: "YOUR_PUBLIC_KEY",
-    });
+    emailjs.init("qjb7LXYLF_cMWMYzD"); // Replace with your actual public key
   }, []);
 
   const handleSubmit = async (e: FormEvent) => {
@@ -34,9 +32,10 @@ const ContactSection: FC = () => {
     setSubmitStatus("idle");
     try {
       await emailjs.sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        e.target as HTMLFormElement
+        "service_fxft1en", // Replace with your actual service ID
+        "template_2nv15mk", // Replace with your actual template ID
+        e.target as HTMLFormElement,
+        "qjb7LXYLF_cMWMYzD" // Replace with your actual public key
       );
       setSubmitStatus("success");
       setFormData({ name: "", email: "", message: "" });
@@ -126,7 +125,7 @@ const ContactSection: FC = () => {
                   type="text"
                   name="user_name"
                   placeholder="Your Name"
-                  className="w-full py-4 bg-transparent outline-none text-lg transition-all duration-300 group-hover:border-[#3d2314] px-2"
+                  className="w-full py-4 bg-transparent outline-none text-lg text-black transition-all duration-300 group-hover:border-[#3d2314] px-2"
                   value={formData.name}
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
@@ -144,7 +143,7 @@ const ContactSection: FC = () => {
                   type="email"
                   name="user_email"
                   placeholder="Email Address"
-                  className="w-full py-4 bg-transparent outline-none text-lg transition-all duration-300 group-hover:border-[#3d2314] px-2"
+                  className="w-full py-4 bg-transparent outline-none text-lg text-black transition-all duration-300 group-hover:border-[#3d2314] px-2"
                   value={formData.email}
                   onChange={(e) =>
                     setFormData({ ...formData, email: e.target.value })
@@ -162,7 +161,7 @@ const ContactSection: FC = () => {
                   name="message"
                   placeholder="Tell us about your interest in chocolate making"
                   rows={4}
-                  className="w-full py-4 bg-transparent outline-none text-lg resize-none transition-all duration-300 group-hover:border-[#3d2314] px-2"
+                  className="w-full py-4 bg-transparent outline-none text-lg text-black resize-none transition-all duration-300 group-hover:border-[#3d2314] px-2"
                   value={formData.message}
                   onChange={(e) =>
                     setFormData({ ...formData, message: e.target.value })
@@ -186,14 +185,13 @@ const ContactSection: FC = () => {
               >
                 {isSubmitting ? t("sending") : t("submit")}
               </motion.button>
-
               {submitStatus === "success" && (
                 <motion.p
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   className="text-green-600 text-center"
                 >
-                  Thank you for your message! We&apos;ll get back to you soon.
+                  {t("successMessage")}
                 </motion.p>
               )}
 
@@ -203,8 +201,7 @@ const ContactSection: FC = () => {
                   animate={{ opacity: 1 }}
                   className="text-red-600 text-center"
                 >
-                  There was an error sending your message. Please try again
-                  later.
+                  {t("errorMessage")}
                 </motion.p>
               )}
             </motion.form>

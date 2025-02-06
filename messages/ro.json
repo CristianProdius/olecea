@@ -12,7 +12,7 @@
     "school": "Școală",
     "description": "Bucurați-vă de călătoria în lumea artei ciocolatei cu un chef ciocolatier profesionist și degustător certificat de cacao",
     "coursesButton": "Cursuri și Masterclass-uri",
-    "shopButton": "Magazin"
+    "shopButton": "Despre Mine"
   },
 
   "services": {
@@ -216,5 +216,11 @@
     "social": {
       "title": "Social"
     }
+  },
+
+  "blog": {
+    "title": "Blog",
+    "readMore": "Citește mai mult",
+    "loading": "Se încarcă postările..."
   }
 }

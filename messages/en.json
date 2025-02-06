@@ -12,7 +12,7 @@
     "school": "School",
     "description": "Enjoy the journey into the world of chocolate art with a professional chef chocolatier and certified cocoa taster",
     "coursesButton": "Courses and Masterclasses",
-    "shopButton": "Shop"
+    "shopButton": "About Me"
   },
 
   "services": {
@@ -215,5 +215,11 @@
     "social": {
       "title": "Social"
     }
+  },
+
+  "blog": {
+    "title": "Blog",
+    "readMore": "Read More",
+    "loading": "Loading posts..."
   }
 }

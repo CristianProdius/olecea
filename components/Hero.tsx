@@ -78,12 +78,12 @@ export default function Hero() {
             variants={fadeUp}
             className="flex flex-col sm:flex-row items-center gap-4 sm:space-x-5 pt-4 justify-center lg:justify-start"
           >
-            <Link href="/courses" passHref>
+            <Link href="https://www.delice.school/" passHref>
               <button className="w-full sm:w-auto bg-[#3d2314] text-white px-8 py-4 rounded-full hover:bg-[#5d3324] transition-all duration-300 text-[15px] hover:shadow-lg hover:scale-105 active:scale-95">
                 {t("coursesButton")}
               </button>
             </Link>
-            <Link href="/shop" passHref>
+            <Link href="/about" passHref>
               <button className="w-full sm:w-auto bg-[#f0e6d9] text-[#3d2314] px-8 py-4 rounded-full hover:bg-[#e8d9c6] transition-all duration-300 text-[15px] hover:shadow-lg hover:scale-105 active:scale-95">
                 {t("shopButton")}
               </button>

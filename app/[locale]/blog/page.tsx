@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 interface Post {
   id: number;
@@ -15,6 +16,7 @@ interface Post {
 }
 
 export default function BlogPage() {
+  const t = useTranslations("blog");
   const [posts, setPosts] = useState<Post[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -71,7 +73,7 @@ export default function BlogPage() {
             variants={fadeInUp}
             className="text-4xl md:text-5xl font-medium text-[#3d2314] mb-12"
           >
-            Blog
+            {t("title")}
           </motion.h1>
 
           {isLoading ? (
@@ -119,7 +121,7 @@ export default function BlogPage() {
                         dangerouslySetInnerHTML={{ __html: post.excerpt }}
                       />
                       <span className="inline-block bg-[#3d2314] text-white px-6 py-2 rounded-full text-sm hover:bg-[#5d3324] transition-colors duration-300">
-                        Read More
+                        {t("readMore")}
                       </span>
                     </div>
                   </motion.article>
