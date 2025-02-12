@@ -37,7 +37,9 @@
     "greeting": "Hi, I'm",
     "intro": {
       "first": "As a certified chocolate sommelier and professional chocolatier, I'm the founder of DELICE Creative Chocolate School. My journey began with a simple love for sweets and an old family recipe book.",
-      "second": "With deep knowledge in neurobiology and nutrition, I combine my passion for quality chocolate with a commitment to healthy living. Today, I serve as a mentor, trainer, and consultant, helping both beginners and professionals master the art of chocolate."
+      "second": "With deep knowledge in neurobiology and nutrition, I combine my passion for quality chocolate with a commitment to healthy living. Today, I serve as a mentor, trainer, and consultant, helping both beginners and professionals master the art of chocolate.",
+      "third": "Once, I simply picked up a tool without knowing how to use it properly. Continuous learning and practice changed my world – and the world of my students. Today, my desserts and chocolates are recognizable, gifted to loved ones, honored guests, and celebrities. They have been tasted by presidents, consuls, and world musicians, and the chocolates have traveled to the most prestigious corners of the world.",
+      "fourth": "In my masterclasses and courses, I have often seen people rediscover themselves, realize their potential, and gain confidence. Everyone can create delicious and unique masterpieces! And if it seems too difficult – don't worry, I will help you find the right approach that will make your journey into the art of chocolate easy and inspiring!"
     },
     "mission": {
       "title": "My Mission",

@@ -31,8 +31,8 @@ const Footer: FC<FooterProps> = ({ currentYear = 2024 }) => {
     },
   };
 
-  // TO DO "courses", "tastings", "events" implement this services
-  const services = ["school", "shop"];
+  // TO DO "courses", "tastings",  implement this services
+  const services = ["school", "shop", "events"];
   const connect = ["about", "blog", "contact", "instagram"];
   const locale = useLocale(); // or get the locale from your context or props
   const generateHref = (path: string) => `/${locale}${path}`;

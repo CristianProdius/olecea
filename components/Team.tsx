@@ -63,6 +63,8 @@ const InstructorSection: FC = () => {
               <div className="space-y-6 text-[#3d2314]/80">
                 <p className="text-lg leading-relaxed">{t("intro.first")}</p>
                 <p className="text-lg leading-relaxed">{t("intro.second")}</p>
+                <p className="text-lg leading-relaxed">{t("intro.third")}</p>
+                <p className="text-lg leading-relaxed">{t("intro.fourth")}</p>
               </div>
             </div>
           </motion.div>
@@ -77,7 +79,7 @@ const InstructorSection: FC = () => {
 
               <div className="aspect-[3/4] w-full max-w-[400px] mx-auto rounded-3xl overflow-hidden shadow-[0_32px_64px_rgba(0,0,0,0.15)] relative group">
                 <Image
-                  src="/Olesea.jpg"
+                  src="/Olesea.PNG"
                   alt="Olesea - Chocolate Expert"
                   fill
                   sizes="(max-width: 768px) 100vw, 400px"

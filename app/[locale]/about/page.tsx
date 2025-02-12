@@ -73,7 +73,7 @@ const AboutPage = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-[#3d2314]/5 to-transparent rounded-3xl transform rotate-3 scale-105" />
             <div className="relative h-full rounded-3xl overflow-hidden shadow-2xl transform transition-transform hover:-translate-y-2 duration-300">
               <Image
-                src="/Olesea.jpg"
+                src="/Olesea.PNG"
                 alt="Olesea - Chocolate Expert"
                 fill
                 className="object-cover"
