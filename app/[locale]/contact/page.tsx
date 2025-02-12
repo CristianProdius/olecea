@@ -149,7 +149,7 @@ const ContactPage = () => {
             <motion.div variants={fadeInUp} className="space-y-12">
               <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/mainContact.png"
+                  src="/contact.PNG"
                   alt="DELICE Chocolate Workshop"
                   fill
                   className="object-cover"
