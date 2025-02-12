@@ -100,7 +100,7 @@ const AboutPage = () => {
                 <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl relative transform hover:scale-105 transition-transform duration-300">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10" />
                   <Image
-                    src="/mission1.jpg"
+                    src="/mission1.png"
                     alt="Chocolate Making Process"
                     fill
                     className="object-cover"
@@ -110,7 +110,7 @@ const AboutPage = () => {
                 <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl relative transform hover:scale-105 transition-transform duration-300 translate-x-8">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10" />
                   <Image
-                    src="/mission2.jpg"
+                    src="/mission2.png"
                     alt="Chocolate Details"
                     fill
                     className="object-cover"

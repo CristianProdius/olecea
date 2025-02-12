@@ -68,7 +68,7 @@ const ChocolatePromoSection: FC = () => {
             >
               <div className="relative w-full max-w-[500px] mx-auto perspective-1000">
                 <motion.img
-                  src="/guide.jpg"
+                  src="/guide.png"
                   alt={t("imageAlt")}
                   className="w-full h-auto rounded-lg"
                   animate={{

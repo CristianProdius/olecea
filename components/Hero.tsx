@@ -100,7 +100,7 @@ export default function Hero() {
               {/* 16:9 Aspect Ratio */}
               <video
                 ref={videoRef}
-                src="/promoDelice.webm"
+                src="/promoDelice.MOV"
                 className="absolute top-0 left-0 w-full h-full object-cover transform group-hover:scale-105 transition-all duration-700"
                 autoPlay
                 loop
