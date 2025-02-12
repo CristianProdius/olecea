@@ -2,7 +2,7 @@
 import { FC, FormEvent, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 interface FooterProps {
   currentYear?: number;
@@ -31,8 +31,11 @@ const Footer: FC<FooterProps> = ({ currentYear = 2024 }) => {
     },
   };
 
-  const services = ["school", "shop", "courses", "tastings", "events"];
+  // TO DO "courses", "tastings", "events" implement this services
+  const services = ["school", "shop"];
   const connect = ["about", "blog", "contact", "instagram"];
+  const locale = useLocale(); // or get the locale from your context or props
+  const generateHref = (path: string) => `/${locale}${path}`;
 
   return (
     <footer className="bg-gradient-to-b from-[#f0e6d9] to-[#f8f3e9] px-6 py-16 md:px-8 md:py-24">
@@ -124,7 +127,13 @@ const Footer: FC<FooterProps> = ({ currentYear = 2024 }) => {
                     href={
                       item === "instagram"
                         ? "https://www.instagram.com/delice.sommelier/"
-                        : `/${item}`
+                        : item === "blog"
+                        ? generateHref("/blog")
+                        : item === "about"
+                        ? generateHref("/about")
+                        : item === "contact"
+                        ? generateHref("/contact")
+                        : generateHref(item)
                     }
                   >
                     <span

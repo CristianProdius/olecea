@@ -199,22 +199,22 @@
     "title": "Давайте Создадим Что-то Вместе",
     "description": "Интересуетесь ли вы нашими курсами, дегустациями или индивидуальными творениями из шоколада, мы здесь, чтобы помочь воплотить ваши шоколадные мечты в реальность.",
     "form": {
-      "name": "Your Name",
-      "email": "Your Email",
-      "subject": "Subject",
-      "message": "Tell us about your interest in chocolate making",
-      "button": "Send Message"
+      "name": "Ваше Имя",
+      "email": "Ваша Электронная Почта",
+      "subject": "Тема",
+      "message": "Расскажите о вашем интересе к изготовлению шоколада",
+      "button": "Отправить Сообщение"
     },
     "location": {
-      "title": "Location",
-      "address": "Chisinau, Moldova"
+      "title": "Местоположение",
+      "address": "Кишинев, Молдова"
     },
     "email": {
-      "title": "Email",
+      "title": "Электронная Почта",
       "address": "contact@deliceschool.com"
     },
     "social": {
-      "title": "Social"
+      "title": "Социальные Сети"
     }
   },
   "blog": {
