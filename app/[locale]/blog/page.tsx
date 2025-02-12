@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 interface Post {
   id: number;
@@ -19,6 +19,8 @@ export default function BlogPage() {
   const t = useTranslations("blog");
   const [posts, setPosts] = useState<Post[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const locale = useLocale(); // or get the locale from your context or props
+  const generateHref = (path: string) => `/${locale}${path}`;
 
   useEffect(() => {
     fetchPosts();
@@ -95,7 +97,7 @@ export default function BlogPage() {
               animate="visible"
             >
               {posts.map((post) => (
-                <Link href={`/blog/${post.slug}`} key={post.id}>
+                <Link href={generateHref(`/blog/${post.slug}`)} key={post.id}>
                   <motion.article
                     variants={fadeInUp}
                     whileHover={{ y: -10 }}
