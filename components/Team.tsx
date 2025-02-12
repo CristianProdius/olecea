@@ -133,6 +133,10 @@ const InstructorSection: FC = () => {
             <div className="space-y-6 text-[#3d2314]/80">
               <p className="text-lg leading-relaxed">{t("mission.first")}</p>
               <p className="text-lg leading-relaxed">{t("mission.second")}</p>
+              <p className="text-lg leading-relaxed">{t("mission.third")}</p>
+              <p className="text-lg leading-relaxed">{t("mission.fourth")}</p>
+              <p className="text-lg leading-relaxed">{t("mission.fifth")}</p>
+              <p className="text-lg leading-relaxed">{t("mission.sixth")}</p>
             </div>
           </motion.div>
         </motion.div>
