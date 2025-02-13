@@ -39,7 +39,7 @@ export default function Header() {
       <div className="max-w-7xl w-full mx-auto flex items-center justify-between px-4 lg:px-8 box-border">
         <Link
           href="/"
-          className="relative group text-[#3d2314] text-xl sm:text-2xl font-serif tracking-wide shrink-0"
+          className="relative group text-[#3d2314] text-xl sm:text-2xl font-medium tracking-wide shrink-0"
         >
           DELICE
           <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#3d2314] transition-all group-hover:w-full"></span>

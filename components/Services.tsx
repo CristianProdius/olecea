@@ -65,7 +65,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     <div className="mb-6 sm:mb-8 transform group-hover:scale-110 transition-transform duration-300">
       {icon}
     </div>
-    <h3 className="text-2xl sm:text-3xl font-serif mb-3 sm:mb-4 text-[#3d2314] tracking-tight">
+    <h3 className="text-2xl sm:text-3xl font-medium mb-3 sm:mb-4 text-[#3d2314] tracking-tight">
       {title}
     </h3>
     <p className="text-[#3d2314]/70 text-[15px] leading-relaxed font-light">

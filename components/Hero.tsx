@@ -53,7 +53,7 @@ export default function Hero() {
         <motion.div variants={fadeUp} className="lg:w-[45%] space-y-8">
           <motion.h1
             variants={fadeUp}
-            className="text-4xl md:text-6xl lg:text-[64px] font-serif leading-[1.1] tracking-[-0.02em] text-center lg:text-left text-[#3d2314]"
+            className="text-4xl md:text-6xl lg:text-[64px] font-medium leading-[1.1] tracking-[-0.02em] text-center lg:text-left text-[#3d2314]"
           >
             DELICE{" "}
             <span className="italic font-light relative">

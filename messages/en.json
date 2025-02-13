@@ -48,7 +48,7 @@
       "third": "- Master decoration and sculpting techniques, turning desserts into works of art.",
       "fourth": "- Develop your talent, get inspired, and create without limits!",
       "fifth": "- Create your sweet business and turn your passion into a lifelong endeavor.",
-      "sixth": "start your journey into chocolate mastery today!"
+      "sixth": "Start your journey into chocolate mastery today!"
     }
   },
 
@@ -179,17 +179,17 @@
   },
 
   "AboutPage": {
-    "title": "About DELICE",
+    "title": "About Us",
     "meetOlesea": "We are not just a school, we are a space of inspiration, taste, and true mastery!",
     "bio": {
       "part1": "Here, chocolate turns into art, desserts become design masterpieces, and every student becomes a creator of unique masterpieces.",
-      "part2": "Who is our school for?\n Professional confectioners who want to reach a new level and master complex techniques.\n Enthusiasts and home cooks dreaming of creating restaurant desserts in their kitchen.\n Productions, cafes, and restaurants striving to surprise guests with signature sweets.\n Children, to whom we will give the magic of the chocolate world and develop their creative abilities."
+      "part2": "Who is our school for?\n ✔ Professional confectioners who want to reach a new level and master complex techniques.\n ✔ Enthusiasts and home cooks dreaming of creating restaurant desserts in their kitchen.\n ✔ Productions, cafes, and restaurants striving to surprise guests with signature sweets.\n ✔ Children, to whom we will give the magic of the chocolate world and develop their creative abilities."
     },
     "philosophy": {
-      "title": "How do we teach?",
-      "part1": "We conduct group and individual classes, online courses, tastings, and live workshops. You can learn in a convenient format, whether it's working in the studio, in your kitchen, or in a professional confectionery.",
-
-      "part2": "Unique treats, chocolate compositions, and desserts that you not only want to eat but also admire! Real taste and creativity celebrations where every student reveals their talents. New creative masters of chocolate and confectionery art who create boldly, brightly, and confidently!"
+      "teachingTitle": "How do we teach?",
+      "part1": "We conduct group and individual classes, online courses, tastings, and live workshops. You can learn in a convenient format, whether it's working in the studio, in your own kitchen, or in a professional confectionery.",
+      "creatingTitle": "What do we create?",
+      "part2": "Unique treats, chocolate compositions, and desserts that you not only want to eat but also admire! True celebrations of taste and creativity, where every student reveals their talents. New creative masters of chocolate and confectionery art who create boldly, brightly, and confidently!"
     },
     "expertise": {
       "title": "Our Experience",
@@ -210,7 +210,8 @@
       "email": "Your Email",
       "subject": "Subject",
       "message": "Tell us about your interest in chocolate making",
-      "button": "Send Message"
+      "button": "Send Message",
+      "sending": "Sending..."
     },
     "location": {
       "title": "Location",

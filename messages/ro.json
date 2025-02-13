@@ -48,7 +48,7 @@
       "third": "- Stăpânește tehnicile de decorare și modelare, transformând deserturile în opere de artă.",
       "fourth": "- Dezvoltă-ți talentul, inspiră-te și creează fără limite!",
       "fifth": "- Creează-ți propria afacere dulce și transformă-ți pasiunea în cariera vieții tale.",
-      "sixth": "începe-ți drumul în măiestria ciocolatei chiar astăzi!"
+      "sixth": "Incepe-ți drumul în măiestria ciocolatei chiar astăzi!"
     }
   },
 
@@ -179,16 +179,16 @@
   },
 
   "AboutPage": {
-    "title": "Despre DELICE",
+    "title": "Despre Noi",
     "meetOlesea": "Noi nu suntem doar o școală, suntem un spațiu de inspirație, gust și măiestrie adevărată!",
     "bio": {
       "part1": "Aici, ciocolata se transformă în artă, deserturile devin opere de design, iar fiecare elev devine creatorul unor capodopere unice.",
       "part2": "Pentru cine este școala noastră?\n Patiseri profesioniști care doresc să atingă un nou nivel și să stăpânească tehnici complexe.\n Amatori și bucătari de casă care visează să creeze deserturi de restaurant în propria bucătărie.\n Producători, cafenele și restaurante care doresc să-și surprindă oaspeții cu dulciuri personalizate.\n Copii cărora le vom oferi magia lumii ciocolatei și le vom dezvolta abilitățile creative."
     },
     "philosophy": {
-      "title": "Cum învățăm?",
-      "part1": "Organizăm cursuri de grup și individuale, cursuri online, degustări și ateliere live. Puteți învăța în formatul care vă convine, fie că lucrați în studio, în propria bucătărie sau într-o patiserie profesională.",
-
+      "teachingTitle": "Cum învățăm?",
+      "part1": "Organizăm cursuri de grup și individuale, cursuri online, degustări și ateliere live. Puteți învăța într-un format convenabil, fie că lucrați în studio, în propria bucătărie sau într-o patiserie profesională.",
+      "creatingTitle": "Ce creăm?",
       "part2": "Delicii unice, compoziții din ciocolată și deserturi care nu doar că sunt delicioase, dar și încântă privirea! Adevărate sărbători ale gustului și creativității, unde fiecare elev își dezvăluie talentele. Noi maeștri creativi ai artei ciocolatei și patiseriei, care creează cu îndrăzneală, strălucire și încredere!"
     },
     "expertise": {
@@ -210,7 +210,8 @@
       "email": "Email-ul Dumneavoastră",
       "subject": "Subiect",
       "message": "Spuneți-ne despre interesul dumneavoastră pentru fabricarea ciocolatei",
-      "button": "Trimiteți Mesajul"
+      "button": "Trimiteți Mesajul",
+      "sending": "Se Trimite..."
     },
     "location": {
       "title": "Locație",

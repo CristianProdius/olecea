@@ -7,7 +7,7 @@ import emailjs from "@emailjs/browser";
 import { useTranslations } from "next-intl";
 
 const ContactSection: FC = () => {
-  const t = useTranslations("contact");
+  const t = useTranslations("ContactPage");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -124,7 +124,7 @@ const ContactSection: FC = () => {
                 <input
                   type="text"
                   name="user_name"
-                  placeholder="Your Name"
+                  placeholder={t("form.name")}
                   className="w-full py-4 bg-transparent outline-none text-lg text-black transition-all duration-300 group-hover:border-[#3d2314] px-2"
                   value={formData.name}
                   onChange={(e) =>
@@ -142,7 +142,7 @@ const ContactSection: FC = () => {
                 <input
                   type="email"
                   name="user_email"
-                  placeholder="Email Address"
+                  placeholder={t("form.email")}
                   className="w-full py-4 bg-transparent outline-none text-lg text-black transition-all duration-300 group-hover:border-[#3d2314] px-2"
                   value={formData.email}
                   onChange={(e) =>
@@ -159,7 +159,7 @@ const ContactSection: FC = () => {
               >
                 <textarea
                   name="message"
-                  placeholder="Tell us about your interest in chocolate making"
+                  placeholder={t("form.message")}
                   rows={4}
                   className="w-full py-4 bg-transparent outline-none text-lg text-black resize-none transition-all duration-300 group-hover:border-[#3d2314] px-2"
                   value={formData.message}
@@ -183,7 +183,7 @@ const ContactSection: FC = () => {
                   isSubmitting ? "opacity-70 cursor-not-allowed" : ""
                 }`}
               >
-                {isSubmitting ? t("sending") : t("submit")}
+                {isSubmitting ? t("form.sending") : t("form.button")}
               </motion.button>
               {submitStatus === "success" && (
                 <motion.p

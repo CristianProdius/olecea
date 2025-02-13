@@ -62,7 +62,7 @@ const Footer: FC<FooterProps> = ({ currentYear = 2024 }) => {
                   placeholder={t("newsletter.emailPlaceholder")}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full bg-transparent border-b-2 border-[#3d2314]/20 pb-3 focus:outline-none focus:border-[#3d2314] transition-all duration-300 text-lg px-2"
+                  className="w-full bg-transparent border-b-2 border-[#3d2314]/20 pb-3 focus:outline-none focus:border-[#3d2314] transition-all duration-300 text-lg px-2 text-[#3d2314]"
                 />
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#3d2314] group-hover:w-full transition-all duration-300" />
               </motion.div>

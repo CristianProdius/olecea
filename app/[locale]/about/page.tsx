@@ -42,7 +42,7 @@ const AboutPage = () => {
         >
           <motion.h1
             variants={fadeInUp}
-            className="text-5xl md:text-7xl xl:text-8xl font-serif leading-tight tracking-tighter text-[#3d2314] mb-8"
+            className="text-5xl md:text-7xl xl:text-8xl font-medium leading-tight tracking-tighter text-[#3d2314] mb-8"
           >
             {t("title")}
           </motion.h1>
@@ -58,12 +58,24 @@ const AboutPage = () => {
           className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center"
         >
           <motion.div variants={fadeInUp} className="space-y-8">
-            <h2 className="text-4xl md:text-5xl font-serif text-[#3d2314] leading-tight">
+            <h2 className="text-4xl md:text-5xl font-medium text-[#3d2314] leading-tight">
               {t("meetOlesea")}
             </h2>
             <div className="prose prose-lg text-[#3d2314]/80">
               <p className="leading-relaxed">{t("bio.part1")}</p>
-              <p className="leading-relaxed">{t("bio.part2")}</p>
+              <p className="leading-relaxed">
+                {t("bio.part2")
+                  .split("\n")
+                  .map((line, index) => (
+                    <span
+                      key={index}
+                      className={line.startsWith("✔") ? "pl-4" : ""}
+                    >
+                      {line}
+                      <br />
+                    </span>
+                  ))}
+              </p>
             </div>
           </motion.div>
           <motion.div
@@ -136,11 +148,16 @@ const AboutPage = () => {
             variants={fadeInUp}
             className="order-1 lg:order-2 space-y-8"
           >
-            <h2 className="text-4xl md:text-5xl font-serif text-[#3d2314] leading-tight">
-              {t("philosophy.title")}
+            <h2 className="text-4xl md:text-5xl font-medium text-[#3d2314] leading-tight">
+              {t("philosophy.teachingTitle")}
             </h2>
             <div className="prose prose-lg text-[#3d2314]/80">
               <p className="leading-relaxed">{t("philosophy.part1")}</p>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-medium text-[#3d2314] leading-tight">
+              {t("philosophy.creatingTitle")}
+            </h2>
+            <div className="prose prose-lg text-[#3d2314]/80">
               <p className="leading-relaxed">{t("philosophy.part2")}</p>
             </div>
           </motion.div>
@@ -157,7 +174,7 @@ const AboutPage = () => {
           className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center relative z-10"
         >
           <motion.div variants={fadeInUp} className="space-y-8">
-            <h2 className="text-4xl md:text-5xl font-serif leading-tight">
+            <h2 className="text-4xl md:text-5xl font-medium leading-tight">
               {t("expertise.title")}
             </h2>
             <div className="prose prose-lg prose-invert text-white/90">
@@ -191,7 +208,7 @@ const AboutPage = () => {
           className="max-w-3xl mx-auto text-center relative z-10"
         >
           <motion.div variants={fadeInUp} className="space-y-8">
-            <h2 className="text-4xl md:text-5xl font-serif text-[#3d2314] leading-tight">
+            <h2 className="text-4xl md:text-5xl font-medium text-[#3d2314] leading-tight">
               {t("community.title")}
             </h2>
             <div className="prose prose-lg mx-auto text-[#3d2314]/80">
@@ -201,6 +218,7 @@ const AboutPage = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="mt-8 px-8 py-4 bg-[#3d2314] text-white rounded-full text-lg font-medium hover:bg-[#2a1810] transition-colors duration-300"
+              onClick={() => (window.location.href = "https://delice.school")}
             >
               {t("community.button")}
             </motion.button>

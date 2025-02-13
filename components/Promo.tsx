@@ -24,7 +24,7 @@ const ChocolatePromoSection: FC = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl mb-8 text-[#3d2314] leading-[1.2]">
+              <h2 className="font-medium text-4xl sm:text-5xl lg:text-6xl mb-8 text-[#3d2314] leading-[1.2]">
                 {t("title.first")}
                 <motion.span
                   className="block italic text-[#5d3324]"

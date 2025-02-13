@@ -52,7 +52,7 @@ const ContactPage = () => {
             variants={fadeInUp}
             className="text-center max-w-3xl mx-auto space-y-8"
           >
-            <h1 className="text-4xl md:text-6xl lg:text-[64px] font-serif leading-[1.1] tracking-[-0.02em] text-[#3d2314]">
+            <h1 className="text-4xl md:text-6xl lg:text-[64px] font-medium leading-[1.1] tracking-[-0.02em] text-[#3d2314]">
               {t("title")}
             </h1>
             <p className="text-xl text-[#3d2314]/80 leading-relaxed">
@@ -157,19 +157,19 @@ const ContactPage = () => {
               </div>
               <div className="space-y-8 bg-white/50 backdrop-blur-sm rounded-3xl p-8 shadow-xl">
                 <div>
-                  <h3 className="text-xl font-serif text-[#3d2314] mb-2">
+                  <h3 className="text-xl font-medium text-[#3d2314] mb-2">
                     {t("location.title")}
                   </h3>
                   <p className="text-[#3d2314]/80">{t("location.address")}</p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-serif text-[#3d2314] mb-2">
+                  <h3 className="text-xl font-medium text-[#3d2314] mb-2">
                     {t("email.title")}
                   </h3>
                   <p className="text-[#3d2314]/80">{t("email.address")}</p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-serif text-[#3d2314] mb-2">
+                  <h3 className="text-xl font-medium text-[#3d2314] mb-2">
                     {t("social.title")}
                   </h3>
                   <div className="flex space-x-4">

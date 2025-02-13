@@ -42,7 +42,7 @@ const InstructorSection: FC = () => {
                 {t("subtitle")}
               </motion.p>
               <motion.h2
-                className="text-5xl sm:text-6xl md:text-7xl font-serif text-[#3d2314] leading-[1.1]"
+                className="text-5xl sm:text-6xl md:text-7xl font-medium text-[#3d2314] leading-[1.1]"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -57,7 +57,7 @@ const InstructorSection: FC = () => {
             </div>
 
             <div className="space-y-8">
-              <h3 className="text-3xl md:text-4xl font-serif text-[#3d2314] leading-relaxed">
+              <h3 className="text-3xl md:text-4xl font-medium text-[#3d2314] leading-relaxed">
                 {t("greeting")} <span className="italic">{t("name")}</span>
               </h3>
               <div className="space-y-6 text-[#3d2314]/80">
@@ -127,7 +127,7 @@ const InstructorSection: FC = () => {
             variants={fadeInUp}
             className="space-y-8 order-1 lg:order-2"
           >
-            <h3 className="text-3xl md:text-4xl font-serif text-[#3d2314] leading-relaxed">
+            <h3 className="text-3xl md:text-4xl font-medium text-[#3d2314] leading-relaxed">
               {t("mission.title")}
             </h3>
             <div className="space-y-6 text-[#3d2314]/80">
