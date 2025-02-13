@@ -1,127 +1,131 @@
 {
   "navigation": {
-    "about": "Despre",
+    "about": "Despre noi",
     "school": "Școală",
     "shop": "Magazin",
     "blog": "Blog",
-    "contact": "Contact"
+    "contact": "Contacte"
   },
 
   "hero": {
-    "chocolate": "Ciocolată",
-    "school": "Școală",
-    "description": "Acest site este despre mine, Olesea Kolomiets, șef-ciocolatier, degustător și fondator al școlii de măiestrie în ciocolată și cofetărie. Împărtășesc cunoștințele mele, inspir creativitatea și ajut la înțelegerea profundă a artei ciocolatei. Cursurile mele sunt potrivite pentru cofetari, restauratori, copii și oricine dorește să învețe să lucreze cu ciocolata. Alăturați-vă, creați capodopere și găsiți-vă stilul în lumea cofetăriei!",
-    "coursesButton": "Cursuri și Masterclass-uri",
-    "shopButton": "Despre Mine"
+    "chocolate": "școala de ciocolatieri",
+    "school": "și decoratori de deserturi",
+    "description": "Acest site este despre mine, Olesea Kolomiets, șef ciocolatier, degustător și creator al școlii de măiestrie în ciocolată și patiserie. Împărtășesc cunoștințe, inspir creativitatea și ajut la înțelegerea mai profundă a artei ciocolatei. Cursurile mele sunt potrivite pentru patiseri, restauratori, copii și toți cei care doresc să învețe să lucreze cu ciocolata. Alăturați-vă, creați capodopere și găsiți-vă stilul în lumea patiseriei!",
+    "coursesButton": "Cursuri și Ateliere",
+    "shopButton": "Despre mine"
   },
 
   "services": {
     "professional": {
-      "title": "Instruire Profesională",
-      "description": "Stăpânește arta fabricării ciocolatei cu cursurile noastre complete. Învață temperarea, mularea și crearea de dulciuri unice de la un expert certificat în ciocolată."
+      "title": "Instruire Profesională pentru Patiseri",
+      "description": "Stăpâniți arta fabricării ciocolatei în cursurile noastre complexe. Învățați temperarea, modelarea și crearea de bomboane unice de la un expert certificat în ciocolată."
     },
     "children": {
-      "title": "Școala pentru Copii",
-      "description": "Implică-ți copiii în aventuri captivante de fabricare a ciocolatei. Programele noastre special concepute combină distracția, creativitatea și experiențele practice de învățare."
+      "title": "Școala de Ciocolatieri pentru Copii",
+      "description": "Implicați-vă copiii în aventuri captivante de fabricare a ciocolatei. Programele noastre special concepute combină distracția, creativitatea și experiența practică de învățare."
     },
     "tastings": {
-      "title": "Degustări și Evenimente",
-      "description": "Alătură-te sesiunilor noastre exclusive de degustare a ciocolatei și evenimentelor speciale. Experimentează combinații unice de arome și învață arta aprecierii ciocolatei."
+      "title": "Degustări de Ciocolată",
+      "description": "Alăturați-vă degustărilor noastre exclusive de ciocolată și evenimentelor speciale. Descoperiți combinații unice de arome și învățați arta degustării ciocolatei."
     }
   },
 
   "instructor": {
-    "subtitle": "Expertul și Instructorul Tău de Ciocolată",
-    "meet": "Fă cunoștință cu",
-    "name": "Olesea",
-    "greeting": "Salut, sunt",
+    "subtitle": "Expertul și Instructorul Dumneavoastră în Ciocolată",
+    "meet": "Despre mine",
+    "name": "",
+    "greeting": "Numele meu este Olesea Kolomiets",
     "intro": {
-      "first": "Ca somelier certificat de ciocolată și ciocolatier profesionist, sunt fondatoarea Școlii Creative de Ciocolată DELICE. Călătoria mea a început cu o simplă dragoste pentru dulciuri și o carte veche de rețete de familie.",
-      "second": "Cu cunoștințe profunde în neurobiologie și nutriție, îmbin pasiunea pentru ciocolata de calitate cu angajamentul pentru un stil de viață sănătos. Astăzi, sunt mentor, trainer și consultant, ajutând atât începătorii, cât și profesioniștii să stăpânească arta ciocolatei.",
-      "third": "Cândva am luat în mână un instrument fără să știu cum să-l folosesc corect. Învățarea continuă și practica mi-au schimbat lumea – și lumea elevilor mei. Astăzi, deserturile și ciocolata mea sunt recunoscute, fiind oferite persoanelor dragi, oaspeților de onoare și celebrităților. Au fost gustate de președinți, consuli, muzicieni de renume mondial, iar ciocolata însăși a călătorit în cele mai prestigioase colțuri ale lumii.",
-      "fourth": "La masterclass-urile și cursurile mele, am văzut de multe ori cum oamenii se redescoperă, își conștientizează abilitățile și capătă încredere. Fiecare poate crea capodopere delicioase și unice! Și dacă pare prea dificil – nu vă faceți griji, vă voi ajuta să găsiți abordarea corectă care va face drumul vostru către arta ciocolatei ușor și inspirant!"
+      "first": "Sunt șef ciocolatier, degustător profesionist, profesor și creator al școlii creative de măiestrie în ciocolată și patiserie. De câțiva ani, învăț patiserii și amatorii din întreaga lume nu doar să creeze delicii unice și uimitoare, ci și să creadă în ei înșiși.",
+      "second": "Am demonstrat că chiar și fără educație artistică sau specială, poți învăța să desenezi pe torturi, să modelezi flori delicate, să creezi compoziții complexe din ciocolată și, cel mai important, să inspiri pe alții. Fiecare dintre noi este talentat și poate învăța orice își dorește sincer, dacă își depășește fricile și îndoielile.",
+      "third": "Cândva, am luat pur și simplu un instrument în mână, fără să știu cum să-l folosesc corect. Învățarea constantă și practica mi-au schimbat lumea – și lumea elevilor mei. Astăzi, deserturile și ciocolata mea sunt recunoscute, sunt oferite persoanelor dragi, oaspeților de onoare și celebrităților. Au fost gustate de președinți, consuli, muzicieni de renume mondial, iar ciocolata însăși a călătorit în cele mai prestigioase colțuri ale lumii.",
+      "fourth": "La atelierele și cursurile mele, am văzut de multe ori cum oamenii se redescoperă, își conștientizează abilitățile și capătă încredere. Oricine poate crea capodopere delicioase și unice! Și dacă pare prea dificil – nu vă faceți griji, vă voi ajuta să găsiți abordarea corectă care va face drumul vostru către arta ciocolatei ușor și inspirator!"
     },
     "mission": {
-      "title": "Misiunea Mea",
-      "first": "La DELICE, selectăm cu atenție ingredientele, monitorizăm calitatea și prospețimea lor, asigurând armonia perfectă cu rețetele și alte componente. Creăm ciocolată cu pasiune, gândindu-ne la plăcerea și momentele de încântare care îi așteaptă pe cei cărora le servim.",
-      "second": "Ca mamă de gemeni, apreciez în mod deosebit oportunitatea de a-mi împărtăși experiența și cunoștințele, subliniind importanța unei alimentații delicioase și sănătoase. Te voi învăța cum să faci ciocolată rafinată chiar în bucătăria ta."
+      "title": "Alege direcția de învățare și creează capodopere din ciocolată și deserturi!",
+      "first": "- Stăpânește arta ciocolatierului: de la temperare la combinații gastronomice complexe.",
+      "second": "- Învață să creezi bomboane, torturi și sculpturi din ciocolată personalizate.",
+      "third": "- Stăpânește tehnicile de decorare și modelare, transformând deserturile în opere de artă.",
+      "fourth": "- Dezvoltă-ți talentul, inspiră-te și creează fără limite!",
+      "fifth": "- Creează-ți propria afacere dulce și transformă-ți pasiunea în cariera vieții tale.",
+      "sixth": "începe-ți drumul în măiestria ciocolatei chiar astăzi!"
     }
   },
 
   "reviews": {
-    "title": "Ce Spun Studenții Noștri",
-    "avatarAlt": "Avatarul lui {name}",
+    "title": "Ce spun elevii noștri",
+    "avatarAlt": "Avatar {name}",
     "services": {
-      "tastingEvent": "Degustare de Ciocolată și Vin",
+      "tastingEvent": "Degustare de ciocolată și vin",
       "professionalCourse": "Curs Profesional",
       "childrenWorkshop": "Atelier pentru Copii",
       "corporateEvent": "Eveniment Corporativ",
-      "privateMasterclass": "Masterclass Privat"
+      "privateMasterclass": "Atelier Privat"
     },
     "testimonials": [
       {
         "author": "Maria K.",
-        "content": "O experiență incredibilă combinând vinuri fine cu ciocolate excepționale. Expertiza Olesei a făcut seara de neuitat.",
-        "date": "15 Decembrie 2024"
+        "content": "O experiență incredibilă de combinare a vinurilor rafinate cu produse de ciocolată excelente. Expertiza Olesei a făcut seara de neuitat.",
+        "date": "15 decembrie 2024"
       },
       {
         "author": "Alex D.",
-        "content": "Cursul complet de fabricare a ciocolatei mi-a depășit așteptările. Am învățat tehnici care mi-au transformat afacerea de cofetărie.",
-        "date": "10 Decembrie 2024"
+        "content": "Cursul complex de fabricare a ciocolatei a depășit așteptările mele. Am învățat tehnici care mi-au transformat afacerea de patiserie.",
+        "date": "10 decembrie 2024"
       },
       {
-        "author": "Sophie M.",
-        "content": "Copiii mei s-au distrat de minune la atelierul de ciocolată. Educațional, distractiv și delicios - ce ne-am putea dori mai mult?",
-        "date": "5 Decembrie 2024"
+        "author": "Sofi M.",
+        "content": "Copiii mei s-au bucurat enorm de atelierul de fabricare a ciocolatei. Educațional, distractiv și delicios - ce altceva ai putea dori?",
+        "date": "5 decembrie 2024"
       },
       {
         "author": "David R.",
-        "content": "DELICE a organizat un eveniment perfect de team building. Sesiunea de fabricare a ciocolatei ne-a apropiat mai mult echipa.",
-        "date": "30 Noiembrie 2024"
+        "content": "DELICE a organizat evenimentul perfect de team building. Sesiunea de fabricare a ciocolatei a unit echipa noastră.",
+        "date": "30 noiembrie 2024"
       },
       {
         "author": "Elena V.",
-        "content": "Masterclass-ul privat a fost exact ce aveam nevoie. Atenție personalizată și îndrumare profesională în arta ciocolatei.",
-        "date": "25 Noiembrie 2024"
+        "content": "Atelierul privat a fost exact ceea ce aveam nevoie. Atenție personalizată și îndrumare profesională în arta fabricării ciocolatei.",
+        "date": "25 noiembrie 2024"
       }
     ]
   },
 
   "promo": {
     "title": {
-      "first": "Fabricarea Ciocolatei",
-      "highlight": "de la Bob la Tabletă",
-      "last": "Ghidul Maestrului"
+      "first": "GHID",
+      "highlight": "pentru alegerea și degustarea",
+      "last": "ciocolatei adevărate"
     },
-    "description": "Descoperă arta fabricării ciocolatei cu ghidul nostru complet. Învață tehnici profesionale, rețete secrete și sfaturi de expert pentru crearea unor delicii din ciocolată în propria bucătărie.",
-    "button": "Obține Ghidul",
-    "imageAlt": "Ghid de Fabricare a Ciocolatei",
+    "description": "Nu toată ciocolata este de aceeași calitate și nu fiecare tabletă își dezvăluie adevăratul gust. În ghidul meu, vă voi spune cum să alegeți ciocolata perfectă, să o degustați corect și să recunoașteți nuanțele subtile de gust, textură și aromă. Secretele folosite de degustătorii profesioniști sunt acum disponibile și pentru voi! Obțineți-l și cufundați-vă în lumea adevăratei plăceri a ciocolatei!",
+    "button": "Obțineți Ghidul",
+    "imageAlt": "Ghid pentru Fabricarea Ciocolatei",
     "free": "Gratuit"
   },
 
   "contact": {
-    "title": "Să Creăm Ceva Dulce Împreună",
-    "description": "Fie că sunteți interesat de cursurile noastre de ciocolată, degustări sau creații personalizate, suntem aici pentru a vă ajuta să descoperiți arta fabricării ciocolatei fine.",
-    "namePlaceholder": "Numele Dvs.",
-    "emailPlaceholder": "Adresa de Email",
-    "messagePlaceholder": "Spuneți-ne despre interesul dvs. în fabricarea ciocolatei",
-    "submit": "Contactează-ne",
-    "sending": "Se trimite...",
-    "successMessage": "Vă mulțumim pentru mesaj! Vă vom răspunde în curând.",
+    "title": "Școala de ciocolatieri și decoratori de deserturi",
+    "description": "Alegeți direcția de învățare sau lăsați o cerere pentru a fi contactat.",
+    "namePlaceholder": "Numele Dumneavoastră",
+    "emailPlaceholder": "Email-ul Dumneavoastră",
+    "messagePlaceholder": "Spuneți-ne despre interesul dumneavoastră pentru fabricarea ciocolatei",
+    "submit": "Contactați-ne",
+    "sending": "Trimitere...",
+    "successMessage": "Mulțumim pentru mesajul dumneavoastră! Vă vom contacta în curând.",
     "errorMessage": "A apărut o eroare la trimiterea mesajului. Vă rugăm să încercați din nou mai târziu."
   },
 
   "faq": {
     "title": {
       "first": "Întrebări",
-      "highlight": "Frecvente",
-      "last": "despre Cursuri"
+      "highlight": "frecvente",
+      "last": "despre cursuri"
     },
-    "description": "Tot ce trebuie să știți despre cursurile și masterclass-urile de fabricare a ciocolatei DELICE.",
+    "description": "Tot ce trebuie să știți despre cursurile și atelierele de fabricare a ciocolatei DELICE.",
     "course": {
       "format": {
         "question": "Care este formatul cursului de fabricare a ciocolatei?",
-        "answer": "Cursul constă din 4 module (lecții) de câte 4-5 ore fiecare sau 2 zile complete. Combinăm cunoștințele teoretice cu practica într-un format interactiv. Fiecare lecție include demonstrații ale instructorului urmate de exerciții practice sub îndrumare."
+        "answer": "Cursul constă din 4 module (lecții) de 4-5 ore fiecare sau 2 zile complete. Combinăm cunoștințele teoretice cu practica într-un format interactiv. Fiecare lecție include demonstrații ale instructorului urmate de exerciții practice sub îndrumare."
       }
     },
     "individual": {
@@ -132,11 +136,11 @@
     },
     "experience": {
       "question": "Este necesară experiență pentru a participa la curs?",
-      "answer": "Nu, cursul nostru este potrivit atât pentru începători, cât și pentru cofetari experimentați. Adaptăm programul în funcție de nivelul de pregătire al participanților."
+      "answer": "Nu, cursul nostru este potrivit atât pentru începători, cât și pentru patiseri experimentați. Adaptăm programul în funcție de nivelul de pregătire al participanților."
     },
     "materials": {
       "question": "Sunt furnizate materiale și ingrediente?",
-      "answer": "Da, toate materialele și ingredientele necesare sunt furnizate. Nu trebuie să aduceți nimic cu dvs., în afară de dorința de a învăța și de a crea."
+      "answer": "Da, toate materialele și ingredientele necesare sunt furnizate. Nu trebuie să aduceți nimic cu dumneavoastră, în afară de dorința de a învăța și de a crea."
     },
     "booking": {
       "question": "Cum pot rezerva un loc la curs?",
@@ -144,15 +148,15 @@
     },
     "practice": {
       "question": "Va exista posibilitatea de a practica după curs?",
-      "answer": "Da, oferim acces la materiale suplimentare și rețete pentru practică individuală. De asemenea, vă puteți înscrie la masterclass-urile noastre avansate pentru a aprofunda cunoștințele și abilitățile."
+      "answer": "Da, oferim acces la materiale și rețete suplimentare pentru practică individuală. De asemenea, vă puteți înscrie la atelierele noastre avansate pentru a aprofunda cunoștințele și abilitățile."
     }
   },
 
   "footer": {
     "newsletter": {
       "description": "Abonați-vă pentru a primi actualizări despre cursurile viitoare, degustări și informații despre ciocolată.",
-      "emailPlaceholder": "Introduceți emailul",
-      "subscribe": "Abonare",
+      "emailPlaceholder": "Introduceți email-ul",
+      "subscribe": "Abonați-vă",
       "agreement": "Prin abonare, sunteți de acord să primiți actualizări despre cursurile și evenimentele noastre."
     },
     "services": {
@@ -164,48 +168,49 @@
       "events": "Evenimente"
     },
     "connect": {
-      "title": "Conectare",
-      "about": "Despre",
+      "title": "Contactați-ne",
+      "about": "Despre noi",
       "blog": "Blog",
-      "contact": "Contact",
+      "contact": "Contacte",
       "instagram": "Instagram"
     },
     "copyright": "Toate drepturile rezervate. DELICE",
-    "backToTop": "Înapoi sus"
+    "backToTop": "Sus"
   },
 
   "AboutPage": {
     "title": "Despre DELICE",
-    "meetOlesea": "Cunoaște-o pe Olesea",
+    "meetOlesea": "Noi nu suntem doar o școală, suntem un spațiu de inspirație, gust și măiestrie adevărată!",
     "bio": {
-      "part1": "Ca somelier certificat de ciocolată și ciocolatier profesionist, mi-am dedicat cariera stăpânirii artei de a face ciocolată. Călătoria mea a început cu o pasiune profundă pentru cofetărie și un angajament de a înțelege știința din spatele ciocolatei perfecte.",
-      "part2": "Cu expertiză în neurobiologie și nutriție, aduc o perspectivă unică în fabricarea ciocolatei, combinând măiestria artizanală cu precizia științifică pentru a crea experiențe excepționale cu ciocolată."
+      "part1": "Aici, ciocolata se transformă în artă, deserturile devin opere de design, iar fiecare elev devine creatorul unor capodopere unice.",
+      "part2": "Pentru cine este școala noastră?\n Patiseri profesioniști care doresc să atingă un nou nivel și să stăpânească tehnici complexe.\n Amatori și bucătari de casă care visează să creeze deserturi de restaurant în propria bucătărie.\n Producători, cafenele și restaurante care doresc să-și surprindă oaspeții cu dulciuri personalizate.\n Copii cărora le vom oferi magia lumii ciocolatei și le vom dezvolta abilitățile creative."
     },
     "philosophy": {
-      "title": "Filozofia Noastră",
-      "part1": "La DELICE, credem în crearea mai mult decât doar ciocolată - noi creăm experiențe. Abordarea noastră combină metodele artizanale tradiționale cu tehnicile moderne, asigurând că fiecare creație îndeplinește cele mai înalte standarde de calitate și gust.",
-      "part2": "Prin cursurile și atelierele noastre, ne împărtășim expertiza și pasiunea, ajutând atât începătorii, cât și profesioniștii să stăpânească arta fabricării ciocolatei într-un mediu angajant și suportiv."
+      "title": "Cum învățăm?",
+      "part1": "Organizăm cursuri de grup și individuale, cursuri online, degustări și ateliere live. Puteți învăța în formatul care vă convine, fie că lucrați în studio, în propria bucătărie sau într-o patiserie profesională.",
+
+      "part2": "Delicii unice, compoziții din ciocolată și deserturi care nu doar că sunt delicioase, dar și încântă privirea! Adevărate sărbători ale gustului și creativității, unde fiecare elev își dezvăluie talentele. Noi maeștri creativi ai artei ciocolatei și patiseriei, care creează cu îndrăzneală, strălucire și încredere!"
     },
     "expertise": {
-      "title": "Expertiza Noastră",
-      "description": "Cu ani de experiență în fabricarea ciocolatei și predare, oferim programe de instruire cuprinzătoare care acoperă totul, de la tehnici de bază până la abilități avansate de cofetărie. Cursurile noastre sunt concepute pentru a inspira creativitatea, menținând în același timp cele mai înalte standarde de calitate."
+      "title": "Experiența Noastră",
+      "description": "Cu o experiență de mulți ani în fabricarea ciocolatei și predare, oferim programe complexe de instruire care acoperă totul – de la tehnici de bază la abilități avansate de patiserie. Cursurile noastre sunt concepute pentru a inspira creativitatea, menținând în același timp cele mai înalte standarde de calitate."
     },
     "community": {
-      "title": "Alătură-te Comunității Noastre",
-      "description": "Fie că ești începător sau profesionist, ușile noastre sunt deschise tuturor celor care împărtășesc pasiunea noastră pentru ciocolată. Alătură-te nouă pentru a descoperi arta fabricării ciocolatei și pentru a deveni parte din comunitatea noastră în creștere de entuziaști ai ciocolatei.",
-      "button": "Începe Călătoria"
+      "title": "Alăturați-vă Comunității Noastre",
+      "description": "Indiferent dacă sunteți începător sau profesionist, ușile noastre sunt deschise pentru toți cei care împărtășesc pasiunea noastră pentru ciocolată. Alăturați-vă nouă pentru a descoperi arta fabricării ciocolatei și pentru a deveni parte a comunității noastre în creștere de entuziaști ai ciocolatei.",
+      "button": "Începeți Călătoria"
     }
   },
 
   "ContactPage": {
-    "title": "Să Creăm Împreună",
-    "description": "Fie că sunteți interesat de cursurile noastre, degustări sau creații personalizate de ciocolată, suntem aici pentru a vă ajuta să vă aduceți la viață visele legate de ciocolată.",
+    "title": "Școala de ciocolatieri și decoratori de deserturi",
+    "description": "Alegeți direcția de învățare sau lăsați o cerere pentru a fi contactat.",
     "form": {
-      "name": "Numele Dvs.",
-      "email": "Email-ul Dvs.",
+      "name": "Numele Dumneavoastră",
+      "email": "Email-ul Dumneavoastră",
       "subject": "Subiect",
-      "message": "Spuneți-ne despre interesul dvs. în fabricarea ciocolatei",
-      "button": "Trimite Mesaj"
+      "message": "Spuneți-ne despre interesul dumneavoastră pentru fabricarea ciocolatei",
+      "button": "Trimiteți Mesajul"
     },
     "location": {
       "title": "Locație",
@@ -216,13 +221,12 @@
       "address": "contact@deliceschool.com"
     },
     "social": {
-      "title": "Social"
+      "title": "Rețele Sociale"
     }
   },
-
   "blog": {
     "title": "Blog",
-    "readMore": "Citește mai mult",
+    "readMore": "Citiți mai departe",
     "loading": "Se încarcă postările..."
   }
 }
