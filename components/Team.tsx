@@ -105,7 +105,7 @@ const InstructorSection: FC = () => {
             <div className="grid grid-cols-2 gap-6">
               <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-[0_32px_64px_rgba(0,0,0,0.1)] relative group">
                 <Image
-                  src="/mission1.png"
+                  src="/mission1.PNG"
                   alt="Chocolate Making Process"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -114,7 +114,7 @@ const InstructorSection: FC = () => {
               </div>
               <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-[0_32px_64px_rgba(0,0,0,0.1)] relative group mt-12">
                 <Image
-                  src="/mission2.png"
+                  src="/mission2.PNG"
                   alt="Chocolate Tasting Experience"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
