@@ -81,7 +81,7 @@ const Footer: FC<FooterProps> = ({ currentYear = 2024 }) => {
               {t("newsletter.agreement")}
             </p>
           </motion.div>
-
+          {/* 
           <motion.div variants={fadeInUp}>
             <h3 className="text-xl font-medium mb-8 text-[#3d2314]">
               {t("services.title")}
@@ -115,7 +115,7 @@ const Footer: FC<FooterProps> = ({ currentYear = 2024 }) => {
               ))}
             </motion.ul>
           </motion.div>
-
+*/}
           <motion.div variants={fadeInUp}>
             <h3 className="text-xl font-medium mb-8 text-[#3d2314]">
               {t("connect.title")}

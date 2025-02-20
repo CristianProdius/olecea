@@ -14,8 +14,8 @@ export default function Header() {
 
   const navLinks = [
     { href: generateHref("/about"), label: t("about") },
-    { href: "https://www.delice.school/", label: t("school") },
-    { href: "https://www.delice.market/", label: t("shop") },
+    // { href: "https://www.delice.school/", label: t("school") },
+    // { href: "https://www.delice.market/", label: t("shop") },
     { href: generateHref("/blog"), label: t("blog") },
     { href: generateHref("/contact"), label: t("contact") },
   ];
